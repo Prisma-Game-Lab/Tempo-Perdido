@@ -2,98 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
-public enum TriggerMode
+public enum TravelTo
 {
-    TIMER,
-    ACTIONS
+    PAST,
+    FUTURE
 }
 
 public class TimeTravelManager : MonoBehaviour
 {
     [SerializeField] private TimeTravelSO timeTravelManager;
-    [SerializeField] private TriggerMode triggerMode;
-
-    [HideIfEnumValue("triggerMode", HideIf.NotEqual, (int)TriggerMode.TIMER)][SerializeField] private float totalTime = 0;
-    [HideIfEnumValue("triggerMode", HideIf.NotEqual, (int)TriggerMode.TIMER)][SerializeField] private GameObject timerDisplay;
-    [HideIfEnumValue("triggerMode", HideIf.NotEqual, (int)TriggerMode.ACTIONS)][SerializeField] private int totalActions = 0;
+    [SerializeField] private TravelTo travelTo;
 
     private void OnEnable()
     {
-        timeTravelManager.ExecuteActionEvent.AddListener(ExecutedAction);
+        timeTravelManager.TimeTravelEvent.AddListener(TimeTravel);
     }
 
     private void OnDisable()
     {
-        timeTravelManager.ExecuteActionEvent.RemoveListener(ExecutedAction);
+        timeTravelManager.TimeTravelEvent.RemoveListener(TimeTravel);
     }
 
-    void Start()
+
+    public void TimeTravel()
     {
-        if (triggerMode == TriggerMode.ACTIONS)
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (travelTo == TravelTo.PAST)
         {
-            timerDisplay.gameObject.SetActive(false);
+            sceneName = sceneName.Replace("Future", "Past");
         }
-        else if (triggerMode == TriggerMode.TIMER)
+        else if (travelTo == TravelTo.FUTURE)
         {
-            if (timeTravelManager.currentTime == 0)
-            {
-                timeTravelManager.currentTime = totalTime;
-            }
-            timerDisplay.gameObject.SetActive(true);
+            sceneName = sceneName.Replace("Past", "Future");
         }
-    }
-
-    void Update()
-    {
-        if (triggerMode == TriggerMode.TIMER)
-        {
-            timeTravelManager.currentTime -= Time.deltaTime;
-            UpdateTimer(timeTravelManager.currentTime);
-
-            if (timeTravelManager.currentTime <= 0.0f)
-            {
-                RewindTime();
-            }
-        }
-    }
-
-    public void ExecutedAction()
-    {
-        if (timeTravelManager.currentActions == totalActions)
-        {
-            RewindTime();
-        }
-    }
-
-    private void UpdateTimer(float time)
-    {
-        time += 1;
-
-        float hours = Mathf.FloorToInt(time / 60);
-        float minutes = Mathf.FloorToInt(time % 60);
-
-        string minutesText;
-
-        if (minutes < 10)
-        {
-            minutesText = "0" + minutes.ToString();
-        }
-        else
-        {
-            minutesText = minutes.ToString();
-        }
-
-        timerDisplay.GetComponent<TMP_Text>().text = hours.ToString() + ":" + minutesText;
-    }
-
-    public void RewindTime()
-    {
-        timeTravelManager.currentActions = 0;
-        timeTravelManager.currentTime = totalTime;
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-        Debug.Log("Rewinded");
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 }
