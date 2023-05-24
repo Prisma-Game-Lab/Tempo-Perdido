@@ -4,37 +4,37 @@ using UnityEngine;
 
 public class PlayerControllerArrows : MonoBehaviour
 {
-
     public float speed = 0.2f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public float run = 0.4f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        float currentSpeed = speed;
+
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
-            transform.position = transform.position + new Vector3(1 * speed * Time.deltaTime, 0, 0);
+            currentSpeed = run;
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            transform.position = transform.position + new Vector3(-1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(currentSpeed * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            transform.position = transform.position + new Vector3(0, 1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(-currentSpeed * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            transform.position = transform.position + new Vector3(0, -1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, currentSpeed * Time.deltaTime, 0);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            transform.position += new Vector3(0, -currentSpeed * Time.deltaTime, 0);
         }
     }
-
 }
