@@ -10,8 +10,9 @@ public class PlayerControllerArrows : MonoBehaviour
     private float currentSpeed;
     private int modex = 0;
     private int modey = 0;
+    private bool moving = false;
 
-    private void Star()
+    private void Start()
     {
         currentSpeed = speed;
     }
@@ -19,19 +20,18 @@ public class PlayerControllerArrows : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(currentSpeed * Time.deltaTime * modex, currentSpeed * Time.deltaTime * modey, 0);
+        if (moving)
+        {
+            transform.position += new Vector3((modex * currentSpeed) * Time.deltaTime, (modey * currentSpeed) * Time.deltaTime, 0);
+        }
     }
 
-    public void OnRun (InputAction.CallbackContext ctx)
+    public void OnRun(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Run");
         if (ctx.performed)
         {
             currentSpeed = run;
-            
-
         }
-
         else if (ctx.canceled)
         {
             currentSpeed = speed;
@@ -40,8 +40,12 @@ public class PlayerControllerArrows : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Move");
         Vector2 moveVec = ctx.ReadValue<Vector2>();
+
+        if (moveVec != Vector2.zero)
+            moving = true;
+        else
+            moving = false;
 
         if (moveVec.x > 0)
         {
