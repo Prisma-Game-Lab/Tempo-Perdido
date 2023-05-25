@@ -1,42 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ClickManager : MonoBehaviour
+
+public class ClickManager : MonoBehaviour, IPointerClickHandler
 {
     float moveSpeed = 3.5f, moveAccuracy = 0.15f;
     public Transform Player;
+    [SerializeField] public ItemData itemData;
 
-    // PARTE NOVA {
-    /*private void Start()
+    private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();
-        myCamera = GetComponent<Camera>();
+        Player = GameObject.FindWithTag("Player").transform;
     }
 
-    public void Update()
+    public void OnPointerClick(PointerEventData pointerEventData)
     {
-        if (Input.GetMouseButtonUp(0))
-            goToClickCoroutine = StartCoroutine(GoToClick(Input.mousePosition));
+        Interact();
     }
 
-    public IEnumerator GoToClick(Vector2 mousePos)
+    public virtual void Interact()
     {
-        Vector2 targetPos = myCamera.ScreenToWorldPoint(mousePos);
-        StartCoroutine(gameManager.MoveToPoint(Player, targetPos));
-    }*/
-    // PARTE NOVA }
-
-    public void GoToItem(ItemData item)
-    {
-        StartCoroutine(MoveToPoint(item.goToPoint.position));
+        GoToItem();
     }
 
-    public void GoToItem(ItemDataFloor item)
+    public void GoToItem()
     {
-        StartCoroutine(MoveToPoint(item.goToPoint.position));
+        StartCoroutine(MoveToPoint(itemData.goToPoint.position));
     }
 
     public IEnumerator MoveToPoint(Vector2 point)

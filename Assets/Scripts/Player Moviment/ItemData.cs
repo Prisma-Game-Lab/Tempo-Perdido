@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class ItemData : MonoBehaviour
+[System.Serializable]
+public class ItemData
 {
     public Transform goToPoint;
 }
