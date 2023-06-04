@@ -13,7 +13,7 @@ public class JournalSO : ScriptableObject
     public void OnEnable()
     {
         unlockedLettersByMailbox.Clear();
-        //unlockedLetters.Clear();
+        unlockedLetters.Clear();
     }
 
     public void UnlockNewLetter(string mailboxId)
