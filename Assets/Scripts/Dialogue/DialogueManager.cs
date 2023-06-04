@@ -12,9 +12,12 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueBox;
     public GameObject continueButton;
     public GameObject[] timeTravelButtons;
+    public GameObject[] answerButtons;
 
     private Queue<DialogueStructure> sentences;
+    private DialogueSO currentDialogue;
     private bool isClock;
+    private bool isInteractive;
 
     void Start()
     {
@@ -22,19 +25,14 @@ public class DialogueManager : MonoBehaviour
         DisplayButtons(false);
     }
 
-    public void StartDialogue(Dialogue dialogue, bool _isClock)
+    public void StartDialogue(DialogueSO obj, bool _isClock, bool _isInteractive)
     {
         dialogueBox.SetActive(true);
         continueButton.SetActive(true);
 
-        sentences.Clear();
-
-        foreach (DialogueStructure sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-
         isClock = _isClock;
+        isInteractive = _isInteractive;
+        currentDialogue = obj;
         DisplayNextSentence();
     }
 
@@ -42,15 +40,25 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            if (!isClock)
+            if (!isClock && currentDialogue.answers.Count==0) 
             {
                 EndDialogue();
             }
-            else
+            else if (isClock && currentDialogue.answers.Count==0)
             {
                 continueButton.SetActive(false);
                 dialogueText.text = "Viajar no tempo?";
                 DisplayButtons(true);
+            }
+            else if (currentDialogue.answers.Count>0)
+            {
+                continueButton.SetActive(false);
+
+                for (int i = 0; i < currentDialogue.answers.Count; i++)
+                {
+                    answerButtons[i].SetActive(true);
+                    answerButtons[i].transform.GetChild(0).GetComponent<TMP_Text>().text = currentDialogue.answers[i];
+                }
             }
             return;
         }
@@ -77,5 +85,26 @@ public class DialogueManager : MonoBehaviour
     public void TimeTravel()
     {
         timeTravelSO.TimeTravel();
+    }
+
+    public void EnqueueDialogue(Dialogue dialogue)
+    {
+        sentences.Clear();
+
+        foreach (DialogueStructure sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
+    }
+    
+    public void AnswerDialogue(int index)
+    {
+        for (int i = 0; i < currentDialogue.answers.Count; i++)
+        {
+            answerButtons[i].SetActive(false);
+        }
+        
+        EnqueueDialogue(currentDialogue.answersDialogues[index].dialogue);
+        StartDialogue(currentDialogue.answersDialogues[index], isClock, isInteractive);
     }
 }

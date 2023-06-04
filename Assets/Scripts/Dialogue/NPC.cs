@@ -5,7 +5,8 @@ using UnityEngine;
 public class NPC : ClickManager
 {
     public bool isClock;
-    public Dialogue dialogue;
+    public bool isInteractive;
+    public DialogueSO dialogue;
 
     public override void Interact()
     {
@@ -15,6 +16,8 @@ public class NPC : ClickManager
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, isClock);
+        DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
+        dialogueManager.EnqueueDialogue(dialogue.dialogue);
+        dialogueManager.StartDialogue(dialogue, isClock, isInteractive);
     }
 }
