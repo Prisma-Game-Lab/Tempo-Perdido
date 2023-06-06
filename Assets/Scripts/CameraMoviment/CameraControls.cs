@@ -1,57 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraControls : MonoBehaviour
 {
     public CameraFollow cameraFollow;
     public float cameraMoveSpeed;
+    private bool moving;
+    Vector3 direction;
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+    private void LateUpdate()
+    {       
+        if (moving)
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 targetPosition = transform.TransformPoint(new Vector3(0, 0, -10) + direction);
+            targetPosition.y = cameraFollow.minYFloor;
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+            float clampoffset = Mathf.Clamp(transform.position.x, cameraFollow.minXWall, cameraFollow.maxXWall);
+            Vector3 newPosition = new Vector3(clampoffset, transform.position.y, transform.position.z);
 
-            if (hit.collider != null)
-            {
-                if (hit.collider.gameObject.name == "SetaEsquerda")
-                {
-                    MoveCameraLeft();
-                }
-                else if (hit.collider.gameObject.name == "SetaDireita")
-                {
-                    MoveCameraRight();
-                }
-            }
+            transform.position = Vector3.SmoothDamp(newPosition, targetPosition, ref cameraFollow.velocity, cameraMoveSpeed);
         }
     }
 
-    private void MoveCameraLeft()
+    public void SetMoving(bool value)
     {
-        cameraFollow.cameraLocked = false;
-        StartCoroutine(MoveCameraCoroutine(Vector3.left));
+        moving = value;
     }
 
-    private void MoveCameraRight()
+    public void MoveCameraLeft()
     {
+        direction = Vector3.left;
         cameraFollow.cameraLocked = false;
-        StartCoroutine(MoveCameraCoroutine(Vector3.right));
+        SetMoving(true);    
     }
 
-    private IEnumerator MoveCameraCoroutine(Vector3 direction)
+    public void MoveCameraRight()
     {
-        Vector3 targetPosition = cameraFollow.transform.position + direction;
+        direction = Vector3.right;
+        cameraFollow.cameraLocked = false;
+        SetMoving(true);
 
-        while (Vector3.Distance(cameraFollow.transform.position, targetPosition) > 0.01f)
+    }
+
+    public void OnReset(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
         {
-            cameraFollow.transform.position = Vector3.Lerp(cameraFollow.transform.position, targetPosition, cameraMoveSpeed * Time.deltaTime);
-            yield return null;
+            cameraFollow.cameraLocked = true;
         }
-
-        cameraFollow.enabled = true;
     }
 }
 
