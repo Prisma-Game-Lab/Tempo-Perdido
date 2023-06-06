@@ -176,6 +176,34 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Camera",
+            "id": "ab60f138-256f-4cfc-beac-249d5aefb28d",
+            "actions": [
+                {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "09c64029-e38b-4890-8574-8687f54612f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f4c1102c-9021-4e59-882e-554a7c38fb04",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
