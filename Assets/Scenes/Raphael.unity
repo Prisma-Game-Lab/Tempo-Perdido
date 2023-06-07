@@ -657,8 +657,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   itemData:
     goToPoint: {fileID: 30123682}
-  baseSpeed: 3.5
-  dashSpeed: 10
   heigh: 1
 --- !u!114 &1208716614
 MonoBehaviour:
@@ -1459,16 +1457,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782187407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa049ff7b67e5a34ba604b0ed7ceede3, type: 3}
+  m_Script: {fileID: 11500000, guid: a378029beed534d4c8adef95acece737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   itemData:
     goToPoint: {fileID: 1425683838}
-  baseSpeed: 3.5
-  dashSpeed: 10
-  journal: {fileID: 11400000, guid: 773663a39a8aefe4c962b1d43287b15f, type: 2}
-  mailboxId: Beco
+  itemName: CogL
+  spriteRenderer: {fileID: 1782187410}
 --- !u!4 &1872244294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7237074626991302183, guid: cdfd6c5168068ee46b8d62bdc401abaa, type: 3}
