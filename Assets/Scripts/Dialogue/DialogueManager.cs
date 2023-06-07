@@ -17,7 +17,6 @@ public class DialogueManager : MonoBehaviour
     private Queue<DialogueStructure> sentences;
     private DialogueSO currentDialogue;
     private bool isClock;
-    private bool isInteractive;
 
     void Start()
     {
@@ -25,13 +24,12 @@ public class DialogueManager : MonoBehaviour
         DisplayButtons(false);
     }
 
-    public void StartDialogue(DialogueSO obj, bool _isClock, bool _isInteractive)
+    public void StartDialogue(DialogueSO obj, bool _isClock)
     {
         dialogueBox.SetActive(true);
         continueButton.SetActive(true);
 
         isClock = _isClock;
-        isInteractive = _isInteractive;
         currentDialogue = obj;
         DisplayNextSentence();
     }
@@ -105,6 +103,6 @@ public class DialogueManager : MonoBehaviour
         }
         
         EnqueueDialogue(currentDialogue.answersDialogues[index].dialogue);
-        StartDialogue(currentDialogue.answersDialogues[index], isClock, isInteractive);
+        StartDialogue(currentDialogue.answersDialogues[index], isClock);
     }
 }
