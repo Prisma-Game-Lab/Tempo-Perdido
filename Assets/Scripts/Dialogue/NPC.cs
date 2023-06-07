@@ -8,9 +8,9 @@ public class NPC : ClickManager
     public bool isInteractive;
     public DialogueSO dialogue;
 
-    public override void Interact()
+    public override IEnumerator MoveToPoint(Vector2 point)
     {
-        base.Interact();
+        yield return base.MoveToPoint(point);
         TriggerDialogue();
     }
 

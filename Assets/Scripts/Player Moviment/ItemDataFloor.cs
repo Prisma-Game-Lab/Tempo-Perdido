@@ -19,10 +19,5 @@ public class ItemDataFloor : ClickManager
             itemData.goToPoint.position = worldPosition;
         }
     }
-
-    public override void Interact()
-    {
-        base.Interact();
-    }
 }
 
