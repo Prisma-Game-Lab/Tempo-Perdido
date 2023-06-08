@@ -7,9 +7,9 @@ public class Mailbox : ClickManager
     [SerializeField] private JournalSO journal;
     [SerializeField] private string mailboxId;
 
-    public override void Interact()
+    public override IEnumerator MoveToPoint(Vector2 point)
     {
-        base.Interact();
+        yield return base.MoveToPoint(point);
         journal.UnlockNewLetter(mailboxId);
     }
 }

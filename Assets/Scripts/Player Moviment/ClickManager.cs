@@ -21,7 +21,7 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
         Interact();
     }
 
-    public virtual void Interact()
+    public void Interact()
     {
         GoToItem();
     }
@@ -31,7 +31,7 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
         StartCoroutine(MoveToPoint(itemData.goToPoint.position));
     }
 
-    public IEnumerator MoveToPoint(Vector2 point)
+    public virtual IEnumerator MoveToPoint(Vector2 point)
     {
         Vector2 positionDifference = point - (Vector2)Player.position;
         while (positionDifference.magnitude > moveAccuracy)
