@@ -9,7 +9,6 @@ public class Collectable : ClickManager
 
     public override IEnumerator MoveToPoint(Vector2 point)
     {
-        Debug.Log("Entrou");
         yield return base.MoveToPoint(point);
         Collect();
     }

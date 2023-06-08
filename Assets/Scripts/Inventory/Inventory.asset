@@ -13,4 +13,28 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: 
   inventoryCapacity: 8
-  inventoryItems: []
+  inventoryItems:
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
+  - key: 
+    qtd: 0
+    sprite: {fileID: 0}
