@@ -11,12 +11,12 @@ public class InventorySO : ScriptableObject
 
     private void OnEnable()
     {
-        /*for (int i = 0; i < inventoryCapacity; i++)
+        for (int i = 0; i < inventoryCapacity; i++)
         {
             inventoryItems[i].key = "";
             inventoryItems[i].qtd = 0;
             inventoryItems[i].sprite = null;
-        }*/
+        }
     }
 
     public void AddItem(CollectableObject obj)
