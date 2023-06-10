@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerControllerArrows : MonoBehaviour
 {
+    [SerializeField] private ClickManager floor;
     public float speed = 0.2f;
     public float run = 0.4f;
     private float currentSpeed;
@@ -23,6 +24,8 @@ public class PlayerControllerArrows : MonoBehaviour
         if (moving)
         {
             transform.position += new Vector3((modex * currentSpeed) * Time.deltaTime, (modey * currentSpeed) * Time.deltaTime, 0);
+            floor.redirect = false;
+            floor.initialPosition = this.transform.position;
         }
     }
 

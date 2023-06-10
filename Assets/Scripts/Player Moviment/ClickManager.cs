@@ -11,8 +11,8 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     public Transform Player;
     [SerializeField] public ItemData itemData;
 
-    public Vector3 initialPosition;
-    public bool redirect = false;
+    [HideInInspector] public Vector3 initialPosition;
+    [HideInInspector] public bool redirect = false;
 
     private void Awake()
     {
