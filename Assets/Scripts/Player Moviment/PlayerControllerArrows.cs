@@ -24,8 +24,8 @@ public class PlayerControllerArrows : MonoBehaviour
         if (moving)
         {
             transform.position += new Vector3((modex * currentSpeed) * Time.deltaTime, (modey * currentSpeed) * Time.deltaTime, 0);
-            floor.redirect = false;
-            floor.initialPosition = this.transform.position;
+            floor.movementSO.redirect = false;
+            floor.movementSO.initialPosition = this.transform.position;
         }
     }
 

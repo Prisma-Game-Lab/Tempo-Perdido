@@ -150,6 +150,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   itemData:
     goToPoint: {fileID: 2495440403958518809}
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   journal: {fileID: 11400000, guid: 773663a39a8aefe4c962b1d43287b15f, type: 2}
   mailboxId: Beco
 --- !u!1 &2495440403958518810

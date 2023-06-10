@@ -134,7 +134,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.3557477, y: 3.0714285}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -159,5 +159,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   itemData:
     goToPoint: {fileID: 7857273266728669986}
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   isClock: 0
   dialogue: {fileID: 0}

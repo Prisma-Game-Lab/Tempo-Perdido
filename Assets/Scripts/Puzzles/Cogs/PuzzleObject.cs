@@ -9,6 +9,11 @@ public class PuzzleObject : ClickManager
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
-        Instantiate(puzzleCanvas, gameObject.transform.position, Quaternion.identity);
+        movementSO.initialPosition = Player.position;
+        if (!interrupted)
+        {
+            Instantiate(puzzleCanvas, gameObject.transform.position, Quaternion.identity);
+        }
+        interrupted = false;
     }
 }

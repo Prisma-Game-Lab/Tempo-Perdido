@@ -10,14 +10,13 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     float moveSpeed = 3.5f, moveAccuracy = 0.15f;
     public Transform Player;
     [SerializeField] public ItemData itemData;
-
-    [HideInInspector] public Vector3 initialPosition;
-    [HideInInspector] public bool redirect = false;
+    public MovementSO movementSO;
+    public bool interrupted;
 
     private void Awake()
     {
         Player = GameObject.FindWithTag("Player").transform;
-        initialPosition = Player.position;
+        movementSO.initialPosition = Player.position;
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -32,12 +31,12 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public void GoToItem()
     {
-        if (initialPosition != Player.position)
+        if (movementSO.initialPosition != Player.position)
         {
-            redirect = true;
+            movementSO.redirect = true;
         }
 
-        initialPosition = Player.position;
+        movementSO.initialPosition = Player.position;
         StartCoroutine(MoveToPoint(itemData.goToPoint.position));
     }
 
@@ -45,24 +44,29 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     {
         Vector2 positionDifference = point - (Vector2)Player.position;
 
-        yield return new WaitUntil(() => redirect == false);
+        yield return new WaitUntil(() => movementSO.redirect == false);
 
-        while (positionDifference.magnitude > moveAccuracy && redirect == false)
+        while (positionDifference.magnitude > moveAccuracy && movementSO.redirect == false)
         {
             Player.Translate(moveSpeed * positionDifference.normalized * Time.deltaTime);
             positionDifference = point - (Vector2)Player.position;
             yield return null;
         }
 
-        if (!redirect)
+        if (!movementSO.redirect)
         {
             Player.position = point;
-            initialPosition = Player.position;
+            movementSO.initialPosition = Player.position;
         }
 
         yield return null;
 
-        redirect = false;
+        if (movementSO.redirect)
+        {
+            interrupted = true;
+        }
+
+        movementSO.redirect = false;
     }
 }
 

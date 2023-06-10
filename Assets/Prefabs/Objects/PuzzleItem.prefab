@@ -181,6 +181,5 @@ MonoBehaviour:
   Player: {fileID: 0}
   itemData:
     goToPoint: {fileID: 3044686038940708440}
-  initialPosition: {x: 0, y: 0, z: 0}
-  redirect: 0
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   puzzleCanvas: {fileID: 7804901337207581392, guid: ecd78c007834c4f4a81d5f317ea7ea2b, type: 3}

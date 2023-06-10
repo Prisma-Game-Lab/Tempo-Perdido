@@ -822,8 +822,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   itemData:
     goToPoint: {fileID: 1923532085}
-  initialPosition: {x: 0, y: 0, z: 0}
-  redirect: 0
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   heigh: 1
 --- !u!114 &1451338256
 MonoBehaviour:

@@ -10,7 +10,12 @@ public class Collectable : ClickManager
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
-        Collect();
+        movementSO.initialPosition = Player.position;
+        if (!interrupted)
+        {
+            Collect();
+        }
+        interrupted = false;
     }
 
     public void Collect()
