@@ -79,6 +79,9 @@ public class CogsManager : MonoBehaviour
     {
         if (!pins[selectedPin].CheckPlacement(cogsDict[key]))
         {
+            //TODO: Sound feedback
+            cogSelector.SetActive(false);
+            Debug.Log("The cog does not fit here");
             return;
         }
 

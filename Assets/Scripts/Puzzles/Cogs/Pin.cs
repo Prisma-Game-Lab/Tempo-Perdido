@@ -40,18 +40,22 @@ public class Pin : MonoBehaviour
             case "None":
                 currentCog = Cogs.NONE;
                 image.sprite = pinSprite;
+                GetComponent<RectTransform>().localScale = new Vector3(0.2f, 0.2f, 1.0f);
                 break;
             case "CogL":
                 currentCog = Cogs.LARGE;
                 image.sprite = cogSprites[0];
+                GetComponent<RectTransform>().localScale = new Vector3(2f, 2f, 1.0f);
                 break;
             case "CogM":
                 currentCog = Cogs.MEDIUM;
                 image.sprite = cogSprites[1];
+                GetComponent<RectTransform>().localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 break;
             case "CogS":
                 currentCog = Cogs.SMALL;
                 image.sprite = cogSprites[2];
+                GetComponent<RectTransform>().localScale = new Vector3(0.5f, 0.5f, 1.0f);
                 break;
             default:
                 break;
@@ -62,8 +66,17 @@ public class Pin : MonoBehaviour
     {
         float radius = cogType == "CogL" ? cogRadius[0] : cogType == "CogM" ? cogRadius[1] : cogRadius[2];
         Collider2D[] foundCogs = Physics2D.OverlapCircleAll(transform.position, radius, cogLayer);
+        int cols = 0;
 
-        if (foundCogs.Length > 0)
+        foreach (Collider2D col in foundCogs)
+        {
+            if (col.gameObject != this.gameObject)
+            {
+                cols++;
+            }
+        }
+
+        if (cols > 0)
         {
             return false;
         }
