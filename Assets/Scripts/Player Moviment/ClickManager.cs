@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class ClickManager : MonoBehaviour, IPointerClickHandler
 {
-    float moveSpeed = 3.5f, moveAccuracy = 0.15f;
+    float moveAccuracy = 0.15f;
     public Transform Player;
     [SerializeField] public ItemData itemData;
     public MovementSO movementSO;
@@ -48,7 +48,7 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
         while (positionDifference.magnitude > moveAccuracy && movementSO.redirect == false)
         {
-            Player.Translate(moveSpeed * positionDifference.normalized * Time.deltaTime);
+            Player.Translate(movementSO.moveSpeed * positionDifference.normalized * Time.deltaTime);
             positionDifference = point - (Vector2)Player.position;
             yield return null;
         }
