@@ -43,7 +43,6 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public virtual IEnumerator MoveToPoint(Vector2 point)
     {
-        Debug.Log(redirect);
         Vector2 positionDifference = point - (Vector2)Player.position;
 
         yield return new WaitUntil(() => redirect == false);
