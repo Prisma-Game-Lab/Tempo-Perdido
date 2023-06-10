@@ -11,12 +11,12 @@ public class InventorySO : ScriptableObject
 
     private void OnEnable()
     {
-        for (int i = 0; i < inventoryCapacity; i++)
+        /*for (int i = 0; i < inventoryCapacity; i++)
         {
             inventoryItems[i].key = "";
             inventoryItems[i].qtd = 0;
             inventoryItems[i].sprite = null;
-        }
+        }*/
     }
 
     public void AddItem(CollectableObject obj)
@@ -41,9 +41,16 @@ public class InventorySO : ScriptableObject
 
     public void RemoveItem(int index)
     {
-        inventoryItems[index].key = "";
-        inventoryItems[index].qtd = 0;
-        inventoryItems[index].sprite = null;
+        if (inventoryItems[index].qtd > 1)
+        {
+            inventoryItems[index].qtd--;
+        }
+        else
+        {
+            inventoryItems[index].key = "";
+            inventoryItems[index].qtd = 0;
+            inventoryItems[index].sprite = null;
+        }
     }
 }
 
