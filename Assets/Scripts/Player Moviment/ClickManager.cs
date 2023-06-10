@@ -11,9 +11,13 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     public Transform Player;
     [SerializeField] public ItemData itemData;
 
+    public Vector3 initialPosition;
+    public bool redirect = false;
+
     private void Awake()
     {
         Player = GameObject.FindWithTag("Player").transform;
+        initialPosition = Player.position;
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -28,21 +32,38 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public void GoToItem()
     {
+        if (initialPosition != Player.position)
+        {
+            redirect = true;
+        }
+
+        initialPosition = Player.position;
         StartCoroutine(MoveToPoint(itemData.goToPoint.position));
     }
 
     public virtual IEnumerator MoveToPoint(Vector2 point)
     {
+        Debug.Log(redirect);
         Vector2 positionDifference = point - (Vector2)Player.position;
-        while (positionDifference.magnitude > moveAccuracy)
+
+        yield return new WaitUntil(() => redirect == false);
+
+        while (positionDifference.magnitude > moveAccuracy && redirect == false)
         {
             Player.Translate(moveSpeed * positionDifference.normalized * Time.deltaTime);
             positionDifference = point - (Vector2)Player.position;
             yield return null;
         }
-        Player.position = point;
+
+        if (!redirect)
+        {
+            Player.position = point;
+            initialPosition = Player.position;
+        }
 
         yield return null;
+
+        redirect = false;
     }
 }
 
