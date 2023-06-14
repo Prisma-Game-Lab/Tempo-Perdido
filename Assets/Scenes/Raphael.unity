@@ -1506,6 +1506,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 85e30095-cbe7-4c3c-ad7f-2ee882600bcc
     m_ActionName: Canvas/SelectItem8[/Keyboard/8]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 51e27bb8-f0f5-4aeb-8f3f-75837881dcef
+    m_ActionName: Player/Interact[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Camera

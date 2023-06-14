@@ -823,6 +823,7 @@ MonoBehaviour:
   itemData:
     goToPoint: {fileID: 1923532085}
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
+  interrupted: 0
   heigh: 1
 --- !u!114 &1451338256
 MonoBehaviour:
