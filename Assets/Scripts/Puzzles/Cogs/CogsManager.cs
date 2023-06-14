@@ -42,10 +42,13 @@ public class CogsManager : MonoBehaviour
             cogImages[i].gameObject.SetActive(false);
         }
 
-        int cogLs = inventory.inventoryItems.Find(x => x != null && x.key == "CogL").qtd;
-        int cogMs = inventory.inventoryItems.Find(x => x != null && x.key == "CogM").qtd;
-        int cogSs = inventory.inventoryItems.Find(x => x != null && x.key == "CogS").qtd;
+        CollectableObject hasL = inventory.inventoryItems.Find(x => x != null && x.key == "CogL");
+        CollectableObject hasM = inventory.inventoryItems.Find(x => x != null && x.key == "CogM");
+        CollectableObject hasS = inventory.inventoryItems.Find(x => x != null && x.key == "CogS");
 
+        int cogLs = hasL != null ? hasL.qtd : 0;
+        int cogMs = hasM != null ? hasM.qtd : 0;
+        int cogSs = hasS != null ? hasS.qtd : 0;
 
         for (int i = 0; i < cogLs; i++)
         {
