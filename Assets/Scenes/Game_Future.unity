@@ -135,9 +135,13 @@ PrefabInstance:
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 7857273266881677228, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
+      propertyPath: isClock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857273266881677228, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: be804759789dbe24e955ab63af9cf12c, type: 2}
+      objectReference: {fileID: 11400000, guid: 2ec688b24b586e841b2d14b452ae46e0, type: 2}
     - target: {fileID: 7857273266881677229, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -135,9 +135,13 @@ PrefabInstance:
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 7857273266881677228, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
+      propertyPath: isClock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857273266881677228, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: be804759789dbe24e955ab63af9cf12c, type: 2}
+      objectReference: {fileID: 11400000, guid: 0cfdd93d8db3ec84aa7edc591ddab472, type: 2}
     - target: {fileID: 7857273266881677229, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -823,6 +827,7 @@ MonoBehaviour:
   itemData:
     goToPoint: {fileID: 1923532085}
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
+  interrupted: 0
   heigh: 1
 --- !u!114 &1451338256
 MonoBehaviour:
