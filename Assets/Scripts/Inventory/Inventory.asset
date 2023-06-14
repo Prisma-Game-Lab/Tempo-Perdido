@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryCapacity: 8
   inventoryItems:
-  - key: 
-    qtd: 0
-    sprite: {fileID: 0}
-  - key: 
-    qtd: 0
-    sprite: {fileID: 0}
-  - key: 
-    qtd: 0
-    sprite: {fileID: 0}
+  - key: CogL
+    qtd: 2
+    sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  - key: CogM
+    qtd: 2
+    sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  - key: CogS
+    qtd: 1
+    sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   - key: 
     qtd: 0
     sprite: {fileID: 0}
