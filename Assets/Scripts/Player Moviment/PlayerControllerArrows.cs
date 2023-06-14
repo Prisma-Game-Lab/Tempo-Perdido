@@ -6,8 +6,9 @@ using UnityEngine.InputSystem;
 public class PlayerControllerArrows : MonoBehaviour
 {
     [SerializeField] private ClickManager floor;
-    public float speed = 0.2f;
-    public float run = 0.4f;
+    [SerializeField] private MovementSO movementSO;
+    private float speed;
+    private float run;
     private float currentSpeed;
     private int modex = 0;
     private int modey = 0;
@@ -15,6 +16,8 @@ public class PlayerControllerArrows : MonoBehaviour
 
     private void Start()
     {
+        run = movementSO.runSpeed;
+        speed = movementSO.moveSpeed;
         currentSpeed = speed;
     }
 

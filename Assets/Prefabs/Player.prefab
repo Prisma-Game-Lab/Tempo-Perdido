@@ -845,8 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 0}
-  speed: 6
-  run: 10
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
 --- !u!1 &7310505775087538357
 GameObject:
   m_ObjectHideFlags: 0
