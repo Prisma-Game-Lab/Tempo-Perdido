@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b194eaafc965ce488749f781d9c620d, type: 3}
   m_Name: MovementSO
   m_EditorClassIdentifier: 
-  initialPosition: {x: 0, y: 0, z: 0}
+  moveSpeed: 3.5
+  runSpeed: 6
+  initialPosition: {x: -1.9000001, y: 0.8, z: 0}
   redirect: 0
