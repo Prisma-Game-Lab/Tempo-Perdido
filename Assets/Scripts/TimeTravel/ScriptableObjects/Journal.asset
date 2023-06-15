@@ -14,25 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalLetters:
     list:
-    - Key: Bar
-      Value:
-      - letterText: Carta do bar
-      - letterText: Carta do bar 2
-      - letterText: Carta do bar 3
     - Key: Rua
       Value:
-      - letterText: Carta da rua
-      - letterText: Carta da rua 2
+      - letterText: "Menino, se avexe n\xE3o\r\nAnde com muita cautela\r\nVirando
+          neste mour\xE3o\r\nVer\xE1s como uma vela\r\nBem no meio da entrada\r\nSob
+          l\xE2mpada apagada\r\n\xC9 l\xE1 que encontrar\xE1 ela\r\n\r\nMas, no final
+          do caminho.\r\nguardando com carinho\r\nA chave para o passado,\r\no presente
+          e o futuro,\r\nUma sa\xEDda desse escuro,\r\ndesse medo t\xE3o imaturo,\r\nque
+          te deixa t\xE3o agoniado"
   unlockedLetters:
-  - letterText: "De tudo, ao meu amor serei atento\r\nAntes, e com tal zelo, e sempre,
-      e tanto\r\nQue mesmo em face do maior encanto\r\nDele se encante mais meu pensamento.\r\n\r\nQuero
-      viv\xEA-lo em cada v\xE3o momento\r\nE em louvor hei de espalhar meu canto\r\nE
-      rir meu riso e derramar meu pranto\r\nAo seu pesar ou seu contentamento.\r\n\r\nE
-      assim, quando mais tarde me procure\r\nQuem sabe a morte, ang\xFAstia de quem
-      vive\r\nQuem sabe a solid\xE3o, fim de quem ama\r\n\r\nEu possa me dizer do
-      amor (que tive):\r\nQue n\xE3o seja imortal, posto que \xE9 chama\r\nMas que
-      seja infinito enquanto dure."
-  - letterText: "D\xEA-me um cigarro\r\nDiz a gram\xE1tica\r\nDo professor e do aluno\r\nE
-      do mulato sabido\r\nMas o bom negro e o bom branco\r\nDa Na\xE7\xE3o Brasileira\r\nDizem
-      todos os dias\r\nDeixa disso camarada\r\nMe d\xE1 um cigarro."
+  - letterText: "Menino, se avexe n\xE3o\r\nAnde com muita cautela\r\nVirando neste
+      mour\xE3o\r\nVer\xE1s como uma vela\r\nBem no meio da entrada\r\nSob l\xE2mpada
+      apagada\r\n\xC9 l\xE1 que encontrar\xE1 ela\r\n\r\nMas, no final do caminho.\r\nguardando
+      com carinho\r\nA chave para o passado,\r\no presente e o futuro,\r\nUma sa\xEDda
+      desse escuro,\r\ndesse medo t\xE3o imaturo,\r\nque te deixa t\xE3o agoniado"
   canUnlockLetter: 0
