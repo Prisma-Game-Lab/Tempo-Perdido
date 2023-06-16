@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - name: Beto
-      sentence: "Sei que ele mant\xE9m uma chave reserva em algum lugar por aqui,
-        preciso acha-l\xE1."
+      sentence: "Ele parece saber de algo que eu n\xE3o sei\u2026 Melhor ir falar
+        com ele."
   answersDialogues: []
   answers: []

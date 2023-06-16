@@ -16,6 +16,11 @@ MonoBehaviour:
     sentences:
     - name: Beto
       sentence: "Romero!, est\xE1 a\xED?, preciso falar uma coisa importante com
-        voc\xEA!."
+        voc\xEA!"
+    - name: 
+      sentence: "* Sil\xEAncio *"
+    - name: Beto
+      sentence: "Sei que ele mant\xE9m uma chave reserva em algum lugar por aqui,
+        preciso acha-l\xE1."
   answersDialogues: []
   answers: []
