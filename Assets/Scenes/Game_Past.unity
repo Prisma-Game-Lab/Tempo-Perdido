@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 7857273266881677228, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 0cfdd93d8db3ec84aa7edc591ddab472, type: 2}
+      objectReference: {fileID: 11400000, guid: 31e39d7dfd4b38f4d936d82798e60917, type: 2}
     - target: {fileID: 7857273266881677229, guid: 795fce9372a2ade479ab717b13e5bfdc, type: 3}
       propertyPath: m_RootOrder
       value: 5
