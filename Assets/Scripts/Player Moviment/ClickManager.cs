@@ -31,13 +31,16 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public void GoToItem()
     {
-        if (movementSO.initialPosition != Player.position)
+        if (movementSO.canMove)
         {
-            movementSO.redirect = true;
-        }
+            if (movementSO.initialPosition != Player.position)
+            {
+                movementSO.redirect = true;
+            }
 
-        movementSO.initialPosition = Player.position;
-        StartCoroutine(MoveToPoint(itemData.goToPoint.position));
+            movementSO.initialPosition = Player.position;
+            StartCoroutine(MoveToPoint(itemData.goToPoint.position));
+        }
     }
 
     public virtual IEnumerator MoveToPoint(Vector2 point)

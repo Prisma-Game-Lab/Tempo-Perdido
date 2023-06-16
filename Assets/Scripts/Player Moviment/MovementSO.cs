@@ -7,6 +7,7 @@ public class MovementSO : ScriptableObject
 {
     public float moveSpeed = 3.5f;
     public float runSpeed = 3.5f;
+    [HideInInspector] public bool canMove = true;
     [HideInInspector] public Vector3 initialPosition;
     [HideInInspector] public bool redirect = false;
 }

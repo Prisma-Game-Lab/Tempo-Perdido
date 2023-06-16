@@ -24,7 +24,7 @@ public class PlayerControllerArrows : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving)
+        if (moving && movementSO.canMove)
         {
             transform.position += new Vector3((modex * currentSpeed) * Time.deltaTime, (modey * currentSpeed) * Time.deltaTime, 0);
             floor.movementSO.redirect = false;
