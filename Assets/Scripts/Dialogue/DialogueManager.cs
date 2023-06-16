@@ -85,6 +85,7 @@ public class DialogueManager : MonoBehaviour
 
     public void TimeTravel()
     {
+        movementSO.canMove = true;
         timeTravelSO.TimeTravel();
     }
 
