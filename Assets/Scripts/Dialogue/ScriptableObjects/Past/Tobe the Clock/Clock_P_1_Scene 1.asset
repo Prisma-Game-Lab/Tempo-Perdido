@@ -15,6 +15,8 @@ MonoBehaviour:
   dialogue:
     sentences:
     - name: Tobe
-      sentence: Entendeu o que eu quis dizer?.
-  answersDialogues: []
-  answers: []
+      sentence: Entendeu o que eu quis dizer?
+  answersDialogues:
+  - {fileID: 11400000, guid: 31e39d7dfd4b38f4d936d82798e60917, type: 2}
+  answers:
+  - Acho que sim
