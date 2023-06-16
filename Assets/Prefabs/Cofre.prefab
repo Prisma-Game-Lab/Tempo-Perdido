@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 13371095126600241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25.49, y: 1.4, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 1.6, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6875611213590989711}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.22347811, g: 0.22347811, b: 0.509434, a: 1}
+  m_Color: {r: 0.9960785, g: 0.69411767, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -156,6 +156,8 @@ MonoBehaviour:
   spriteRenderer: {fileID: 49839204568659131}
   openedSprite: {fileID: 0}
   closedSprite: {fileID: 0}
+  handlePrefab: {fileID: 0}
+  puzzles: {fileID: 11400000, guid: a7b1ead80a3bfbb408df8039a77d0dd1, type: 2}
   isOpen: 0
 --- !u!1 &4025894647969843889
 GameObject:
