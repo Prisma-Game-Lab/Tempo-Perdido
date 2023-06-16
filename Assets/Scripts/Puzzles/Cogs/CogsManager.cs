@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class CogsManager : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class CogsManager : MonoBehaviour
     private Dictionary<int, string> cogsDict = new Dictionary<int, string>();
 
     private int selectedPin;
+
+    public PuzzleSO puzzles;
+    public string puzzleName;
 
     // Start is called before the first frame update
     void Start()
@@ -124,7 +128,9 @@ public class CogsManager : MonoBehaviour
         }
 
         puzzleCompleted = true;
+        puzzles.InvokeEvent(puzzleName);
         Debug.Log("Puzzle completed");
+        SelfDestruct();
     }
 
     public void RestartPuzzle()
