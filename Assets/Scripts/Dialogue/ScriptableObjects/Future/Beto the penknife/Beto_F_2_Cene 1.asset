@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Main 2
+  m_Name: Beto_F_2_Cene 1
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - name: Beto
+      sentence: "Sei que ele mant\xE9m uma chave reserva em algum lugar por aqui,
+        preciso acha-l\xE1."
   answersDialogues: []
   answers: []
