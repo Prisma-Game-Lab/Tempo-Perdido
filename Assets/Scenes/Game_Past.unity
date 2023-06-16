@@ -1411,6 +1411,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1418006516, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
+      propertyPath: isOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418006516, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
+      propertyPath: puzzles
+      value: 
+      objectReference: {fileID: 11400000, guid: a7b1ead80a3bfbb408df8039a77d0dd1, type: 2}
     - target: {fileID: 13371095126600241, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
       propertyPath: m_Name
       value: Cofre
