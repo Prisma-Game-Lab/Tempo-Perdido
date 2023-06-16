@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2495440403266462967, guid: 40ecc0073ffa11141bb7a438ed1e73d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 2495440403266462967, guid: 40ecc0073ffa11141bb7a438ed1e73d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -415,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 2495440403266462967, guid: 40ecc0073ffa11141bb7a438ed1e73d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495440403958518809, guid: 40ecc0073ffa11141bb7a438ed1e73d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ecc0073ffa11141bb7a438ed1e73d8, type: 3}
@@ -798,8 +802,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451338251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30, y: 0.3, z: 3}
-  m_LocalScale: {x: 73, y: 1.2, z: 1}
+  m_LocalPosition: {x: 30, y: 0.5905, z: 3}
+  m_LocalScale: {x: 73, y: 0.90180004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1923532085}
@@ -991,6 +995,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 85e30095-cbe7-4c3c-ad7f-2ee882600bcc
     m_ActionName: Canvas/SelectItem8[/Keyboard/8]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 51e27bb8-f0f5-4aeb-8f3f-75837881dcef
+    m_ActionName: Player/Interact[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1403,6 +1411,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1418006516, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
+      propertyPath: isOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418006516, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
+      propertyPath: puzzles
+      value: 
+      objectReference: {fileID: 11400000, guid: a7b1ead80a3bfbb408df8039a77d0dd1, type: 2}
     - target: {fileID: 13371095126600241, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
       propertyPath: m_Name
       value: Cofre
@@ -1417,7 +1433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 278200231599089426, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 278200231599089426, guid: c294bafe7e45ac34385d2158b140a3f7, type: 3}
       propertyPath: m_LocalPosition.z

@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class PuzzleObject : ClickManager
 {
-    [SerializeField] private GameObject puzzleCanvas;
+    public GameObject puzzleCanvas;
+    public bool completed;
+    public string puzzleName;
+
     // Start is called before the first frame update
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
         movementSO.initialPosition = Player.position;
-        if (!interrupted)
+        if (!interrupted && !completed)
         {
-            Instantiate(puzzleCanvas, gameObject.transform.position, Quaternion.identity);
+            GameObject canvasInstance = Instantiate(puzzleCanvas, gameObject.transform.position, Quaternion.identity);
+            canvasInstance.GetComponent<CogsManager>().puzzleName = puzzleName;
+            canvasInstance.GetComponent<CogsManager>().puzzles.puzzleEvents[puzzleName].AddListener(Complete);
         }
         interrupted = false;
+    }
+
+    public void Complete()
+    {
+        completed = true;
     }
 }
