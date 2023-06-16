@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Beto_F_6_Cene 2
+  m_Name: Beto_F_6_Scene 2
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
