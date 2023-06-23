@@ -44,12 +44,12 @@ public class ChestPuzzle : ClickManager
 
         if (isOpen)
         {
-            //spriteRenderer.sprite = openedSprite;
+            spriteRenderer.sprite = openedSprite;
             Debug.Log('A');
         }
         else
         {
-            //spriteRenderer.sprite = closedSprite;
+            spriteRenderer.sprite = closedSprite;
             Debug.Log('F');
         }
     }
