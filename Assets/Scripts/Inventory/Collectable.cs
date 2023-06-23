@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Collectable : ClickManager
 {
+    public string key;
     public string itemName;
     public SpriteRenderer spriteRenderer;
 
+    void Start()
+    {
+        if (SceneObserver.HasItem(key))
+        {
+            Destroy(this.gameObject);
+        }
+    }
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
@@ -22,6 +30,7 @@ public class Collectable : ClickManager
     {
         InventoryManager im = FindObjectOfType<InventoryManager>();
         im.AddItem(this);
+        SceneObserver.CollectItem(key);
         Destroy(this.gameObject);
     }
 }

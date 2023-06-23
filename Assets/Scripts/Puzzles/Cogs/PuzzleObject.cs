@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PuzzleObject : ClickManager
 {
+    public string key;
     public GameObject puzzleCanvas;
     public bool completed;
     public string puzzleName;
 
-    // Start is called before the first frame update
+    void Start()
+    {
+        completed = SceneObserver.PuzzleHasCompleted(key);
+    }
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
@@ -17,7 +21,7 @@ public class PuzzleObject : ClickManager
         {
             GameObject canvasInstance = Instantiate(puzzleCanvas, gameObject.transform.position, Quaternion.identity);
             canvasInstance.GetComponent<CogsManager>().puzzleName = puzzleName;
-            canvasInstance.GetComponent<CogsManager>().puzzles.puzzleEvents[puzzleName].AddListener(Complete);
+            SceneObserver.puzzleEvents[puzzleName].AddListener(Complete);
         }
         interrupted = false;
     }
@@ -25,5 +29,6 @@ public class PuzzleObject : ClickManager
     public void Complete()
     {
         completed = true;
+        SceneObserver.CompletedPuzzles(key);
     }
 }

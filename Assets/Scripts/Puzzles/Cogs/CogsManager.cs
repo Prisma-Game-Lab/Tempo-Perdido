@@ -21,7 +21,6 @@ public class CogsManager : MonoBehaviour
 
     private int selectedPin;
 
-    public PuzzleSO puzzles;
     public string puzzleName;
 
     // Start is called before the first frame update
@@ -128,7 +127,7 @@ public class CogsManager : MonoBehaviour
         }
 
         puzzleCompleted = true;
-        puzzles.InvokeEvent(puzzleName);
+        SceneObserver.InvokeEvent(puzzleName);
         Debug.Log("Puzzle completed");
         SelfDestruct();
     }

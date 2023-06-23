@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Cutscene : MonoBehaviour
 {
+    public string key;
     [SerializeField] private DialogueSO monologue;
     private DialogueManager dialogueManager;
     private bool cutsceneTriggered;
 
-    // Start is called before the first frame update
     void Start()
     {
-        cutsceneTriggered = false;
+        cutsceneTriggered = SceneObserver.HasTriggered(key);
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
@@ -21,6 +21,7 @@ public class Cutscene : MonoBehaviour
         {
             dialogueManager.EnqueueDialogue(monologue.dialogue);
             dialogueManager.StartDialogue(monologue, false);
+            SceneObserver.TriggerCutscene(key);
             cutsceneTriggered = true;
         }
     }

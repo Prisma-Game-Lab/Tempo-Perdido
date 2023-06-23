@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class ChestPuzzle : ClickManager
 {
+    public string key;
+
     [SerializeField] private InventorySO inventory;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite openedSprite, closedSprite;
     [SerializeField] public GameObject handlePrefab;
-    [SerializeField] private PuzzleSO puzzles;
+
     public bool isOpen;
-    
+
     private void OnEnable()
     {
-        puzzles.puzzleEvents["ChestPuzzle"].AddListener(SpawnHandle);
+        SceneObserver.puzzleEvents["ChestPuzzle"].AddListener(SpawnHandle);
+        isOpen = SceneObserver.PuzzleHasCompleted(key);
     }
 
     private void OnDisable()
     {
-        puzzles.puzzleEvents["ChestPuzzle"].RemoveListener(SpawnHandle);
+        SceneObserver.puzzleEvents["ChestPuzzle"].RemoveListener(SpawnHandle);
     }
 
     public override IEnumerator MoveToPoint(Vector2 point)
@@ -40,6 +43,7 @@ public class ChestPuzzle : ClickManager
         if (handle != 0)
         {
             isOpen = true;
+            SceneObserver.CompletedPuzzles(key);
         }
 
         if (isOpen)
