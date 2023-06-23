@@ -2607,7 +2607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 124978907}
-  sfxSlider: {fileID: 0}
+  sfxSlider: {fileID: 1911982163}
 --- !u!1 &1700184669
 GameObject:
   m_ObjectHideFlags: 0
