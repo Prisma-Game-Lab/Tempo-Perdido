@@ -16,7 +16,7 @@ public class ChestPuzzle : ClickManager
     private void OnEnable()
     {
         SceneObserver.puzzleEvents["ChestPuzzle"].AddListener(SpawnHandle);
-        isOpen = SceneObserver.PuzzleHasCompleted(key);
+        isOpen = SceneObserver.playerData.PuzzleHasCompleted(key);
     }
 
     private void OnDisable()
@@ -43,7 +43,8 @@ public class ChestPuzzle : ClickManager
         if (handle != 0)
         {
             isOpen = true;
-            SceneObserver.CompletedPuzzles(key);
+            SceneObserver.playerData.CompletedPuzzles(key);
+            SceneObserver.SaveGame();
         }
 
         if (isOpen)

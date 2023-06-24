@@ -11,7 +11,7 @@ public class PuzzleObject : ClickManager
 
     void Start()
     {
-        completed = SceneObserver.PuzzleHasCompleted(key);
+        completed = SceneObserver.playerData.PuzzleHasCompleted(key);
     }
     public override IEnumerator MoveToPoint(Vector2 point)
     {
@@ -29,6 +29,7 @@ public class PuzzleObject : ClickManager
     public void Complete()
     {
         completed = true;
-        SceneObserver.CompletedPuzzles(key);
+        SceneObserver.playerData.CompletedPuzzles(key);
+        SceneObserver.SaveGame();
     }
 }

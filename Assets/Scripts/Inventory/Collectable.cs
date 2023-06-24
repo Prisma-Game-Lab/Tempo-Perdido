@@ -10,7 +10,7 @@ public class Collectable : ClickManager
 
     void Start()
     {
-        if (SceneObserver.HasItem(key))
+        if (SceneObserver.playerData.HasItem(key))
         {
             Destroy(this.gameObject);
         }
@@ -30,7 +30,8 @@ public class Collectable : ClickManager
     {
         InventoryManager im = FindObjectOfType<InventoryManager>();
         im.AddItem(this);
-        SceneObserver.CollectItem(key);
+        SceneObserver.playerData.CollectItem(key);
+        SceneObserver.SaveGame();
         Destroy(this.gameObject);
     }
 }

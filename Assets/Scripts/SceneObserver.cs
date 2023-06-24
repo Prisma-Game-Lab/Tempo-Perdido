@@ -2,15 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 public static class SceneObserver
 {
-    public static Dictionary<string, bool> collectedItens = new Dictionary<string, bool>();
-    public static Dictionary<string, bool> triggeredCutscenes = new Dictionary<string, bool>();
-    public static Dictionary<string, bool> completedPuzzles = new Dictionary<string, bool>();
     public static Dictionary<string, UnityEvent> puzzleEvents = new Dictionary<string, UnityEvent>()
     {
         {"ChestPuzzle", new UnityEvent()}
     };
+
+    public static PlayerData playerData = new PlayerData();
+
+    public static void SaveGame()
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = System.IO.Path.Combine(Application.persistentDataPath, "tictac.save");
+
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        formatter.Serialize(stream, playerData);
+        stream.Close();
+    }
+
+    public static PlayerData LoadGame()
+    {
+        string path = System.IO.Path.Combine(Application.persistentDataPath, "tictac.save");
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            playerData = formatter.Deserialize(stream) as PlayerData;
+            stream.Close();
+
+            return playerData;
+        }
+        else
+        {
+            Debug.LogError("Save file not found");
+            return null;
+        }
+    }
 
     public static void InvokeEvent(string eventName)
     {
@@ -19,8 +52,22 @@ public static class SceneObserver
             puzzleEvents[eventName]?.Invoke();
         }
     }
+}
 
-    public static void CollectItem(string key)
+[System.Serializable]
+public class PlayerData
+{
+    public string currentScene;
+    public Dictionary<string, bool> collectedItens = new Dictionary<string, bool>();
+    public Dictionary<string, bool> triggeredCutscenes = new Dictionary<string, bool>();
+    public Dictionary<string, bool> completedPuzzles = new Dictionary<string, bool>();
+
+    public PlayerData()
+    {
+        currentScene = "Game_Future";
+    }
+
+    public void CollectItem(string key)
     {
         if (!HasItem(key))
         {
@@ -28,11 +75,11 @@ public static class SceneObserver
         }
     }
 
-    public static bool HasItem(string key)
+    public bool HasItem(string key)
     {
         return collectedItens.ContainsKey(key);
     }
-    public static void TriggerCutscene(string key)
+    public void TriggerCutscene(string key)
     {
         if (!HasTriggered(key))
         {
@@ -40,12 +87,12 @@ public static class SceneObserver
         }
     }
 
-    public static bool HasTriggered(string key)
+    public bool HasTriggered(string key)
     {
         return triggeredCutscenes.ContainsKey(key);
     }
 
-    public static void CompletedPuzzles(string key)
+    public void CompletedPuzzles(string key)
     {
         if (!PuzzleHasCompleted(key))
         {
@@ -53,9 +100,8 @@ public static class SceneObserver
         }
     }
 
-    public static bool PuzzleHasCompleted(string key)
+    public bool PuzzleHasCompleted(string key)
     {
         return completedPuzzles.ContainsKey(key);
     }
-
 }

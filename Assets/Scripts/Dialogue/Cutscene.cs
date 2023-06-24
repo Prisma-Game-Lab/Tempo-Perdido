@@ -11,7 +11,7 @@ public class Cutscene : MonoBehaviour
 
     void Start()
     {
-        cutsceneTriggered = SceneObserver.HasTriggered(key);
+        cutsceneTriggered = SceneObserver.playerData.HasTriggered(key);
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
@@ -21,7 +21,8 @@ public class Cutscene : MonoBehaviour
         {
             dialogueManager.EnqueueDialogue(monologue.dialogue);
             dialogueManager.StartDialogue(monologue, false);
-            SceneObserver.TriggerCutscene(key);
+            SceneObserver.playerData.TriggerCutscene(key);
+            SceneObserver.SaveGame();
             cutsceneTriggered = true;
         }
     }
