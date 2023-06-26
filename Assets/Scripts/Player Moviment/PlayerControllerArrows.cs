@@ -7,6 +7,7 @@ public class PlayerControllerArrows : MonoBehaviour
 {
     [SerializeField] private ClickManager floor;
     [SerializeField] private MovementSO movementSO;
+    [SerializeField] private Collider2D limitObjectCollider;
     private float speed;
     private float run;
     private float currentSpeed;
@@ -29,6 +30,25 @@ public class PlayerControllerArrows : MonoBehaviour
             transform.position += new Vector3((modex * currentSpeed) * Time.deltaTime, (modey * currentSpeed) * Time.deltaTime, 0);
             floor.movementSO.redirect = false;
             floor.movementSO.initialPosition = this.transform.position;
+        }
+
+        // Check if the object is in the limit defined
+        if (limitObjectCollider != null)
+        {
+            Vector3 newPosition = transform.position;
+
+            // Calculate the limit of the 'limit' object 
+            var leftBorder = limitObjectCollider.bounds.min.x;
+            var rightBorder = limitObjectCollider.bounds.max.x;
+            var topBorder = limitObjectCollider.bounds.min.y;
+            var bottomBorder = limitObjectCollider.bounds.max.y;
+
+            // Check if the new position is inside the limits of the object 
+            newPosition.x = Mathf.Clamp(newPosition.x, leftBorder, rightBorder);
+            newPosition.y = Mathf.Clamp(newPosition.y, topBorder, bottomBorder);
+
+            // Update the Player's position 
+            transform.position = newPosition;
         }
     }
 
