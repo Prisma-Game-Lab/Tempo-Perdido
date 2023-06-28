@@ -39,6 +39,8 @@ public class TimeTravelManager : MonoBehaviour
             journal.canUnlockLetter = false;
             sceneName = sceneName.Replace("Past", "Future");
         }
+        SceneObserver.playerData.currentScene = sceneName;
+        SceneObserver.SaveGame();
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 }

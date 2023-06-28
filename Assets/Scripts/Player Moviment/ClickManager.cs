@@ -7,13 +7,16 @@ using UnityEngine.EventSystems;
 
 public class ClickManager : MonoBehaviour, IPointerClickHandler
 {
-    float moveSpeed = 3.5f, moveAccuracy = 0.15f;
+    float moveAccuracy = 0.15f;
     public Transform Player;
     [SerializeField] public ItemData itemData;
+    public MovementSO movementSO;
+    public bool interrupted;
 
     private void Awake()
     {
         Player = GameObject.FindWithTag("Player").transform;
+        movementSO.initialPosition = Player.position;
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -28,21 +31,45 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public void GoToItem()
     {
-        StartCoroutine(MoveToPoint(itemData.goToPoint.position));
+        if (movementSO.canMove)
+        {
+            if (movementSO.initialPosition != Player.position)
+            {
+                movementSO.redirect = true;
+            }
+
+            movementSO.initialPosition = Player.position;
+            StartCoroutine(MoveToPoint(itemData.goToPoint.position));
+        }
     }
 
     public virtual IEnumerator MoveToPoint(Vector2 point)
     {
         Vector2 positionDifference = point - (Vector2)Player.position;
-        while (positionDifference.magnitude > moveAccuracy)
+
+        yield return new WaitUntil(() => movementSO.redirect == false);
+
+        while (positionDifference.magnitude > moveAccuracy && movementSO.redirect == false)
         {
-            Player.Translate(moveSpeed * positionDifference.normalized * Time.deltaTime);
+            Player.Translate(movementSO.moveSpeed * positionDifference.normalized * Time.deltaTime);
             positionDifference = point - (Vector2)Player.position;
             yield return null;
         }
-        Player.position = point;
+
+        if (!movementSO.redirect)
+        {
+            Player.position = point;
+            movementSO.initialPosition = Player.position;
+        }
 
         yield return null;
+
+        if (movementSO.redirect)
+        {
+            interrupted = true;
+        }
+
+        movementSO.redirect = false;
     }
 }
 

@@ -11,10 +11,11 @@ public class InventorySO : ScriptableObject
 
     private void OnEnable()
     {
-        inventoryItems.Clear();
         for (int i = 0; i < inventoryCapacity; i++)
         {
-            inventoryItems.Add(null);
+            inventoryItems[i].key = "";
+            inventoryItems[i].qtd = 0;
+            inventoryItems[i].sprite = null;
         }
     }
 
@@ -30,9 +31,8 @@ public class InventorySO : ScriptableObject
 
         for (int i = 0; i < inventoryCapacity; i++)
         {
-            if (inventoryItems[i].key == null)
+            if (inventoryItems[i].key == "")
             {
-                obj.slot = i;
                 inventoryItems[i] = obj;
                 break;
             }
@@ -41,7 +41,16 @@ public class InventorySO : ScriptableObject
 
     public void RemoveItem(int index)
     {
-        inventoryItems[index] = null;
+        if (inventoryItems[index].qtd > 1)
+        {
+            inventoryItems[index].qtd--;
+        }
+        else
+        {
+            inventoryItems[index].key = "";
+            inventoryItems[index].qtd = 0;
+            inventoryItems[index].sprite = null;
+        }
     }
 }
 
@@ -50,14 +59,12 @@ public class CollectableObject
 {
     public string key;
     public int qtd;
-    public int slot;
     public Sprite sprite;
 
     public CollectableObject(string _key, Sprite _sprite)
     {
         key = _key;
         qtd = 1;
-        slot = 0;
         sprite = _sprite;
     }
 }

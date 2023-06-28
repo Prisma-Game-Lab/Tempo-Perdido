@@ -10,7 +10,12 @@ public class NPC : ClickManager
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
-        TriggerDialogue();
+        movementSO.initialPosition = Player.position;
+        if (!interrupted)
+        {
+            TriggerDialogue();
+        }
+        interrupted = false;
     }
 
     public void TriggerDialogue()

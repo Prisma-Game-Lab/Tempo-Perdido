@@ -6,6 +6,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] private MovementSO movementSO;
     [SerializeField] private TimeTravelSO timeTravelSO;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
@@ -26,6 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueSO obj, bool _isClock)
     {
+        movementSO.canMove = false;
         dialogueBox.SetActive(true);
         continueButton.SetActive(true);
 
@@ -38,17 +40,17 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            if (!isClock && currentDialogue.answers.Count==0) 
+            if (!isClock && currentDialogue.answers.Count == 0)
             {
                 EndDialogue();
             }
-            else if (isClock && currentDialogue.answers.Count==0)
+            else if (isClock && currentDialogue.answers.Count == 0)
             {
                 continueButton.SetActive(false);
                 dialogueText.text = "Viajar no tempo?";
                 DisplayButtons(true);
             }
-            else if (currentDialogue.answers.Count>0)
+            else if (currentDialogue.answers.Count > 0)
             {
                 continueButton.SetActive(false);
 
@@ -70,6 +72,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         DisplayButtons(false);
+        movementSO.canMove = true;
     }
 
     private void DisplayButtons(bool active)
@@ -82,6 +85,7 @@ public class DialogueManager : MonoBehaviour
 
     public void TimeTravel()
     {
+        movementSO.canMove = true;
         timeTravelSO.TimeTravel();
     }
 
@@ -94,14 +98,14 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
     }
-    
+
     public void AnswerDialogue(int index)
     {
         for (int i = 0; i < currentDialogue.answers.Count; i++)
         {
             answerButtons[i].SetActive(false);
         }
-        
+
         EnqueueDialogue(currentDialogue.answersDialogues[index].dialogue);
         StartDialogue(currentDialogue.answersDialogues[index], isClock);
     }

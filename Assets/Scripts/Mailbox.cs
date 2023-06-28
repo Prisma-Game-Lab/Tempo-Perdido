@@ -10,6 +10,11 @@ public class Mailbox : ClickManager
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
-        journal.UnlockNewLetter(mailboxId);
+        movementSO.initialPosition = Player.position;
+        if (!interrupted)
+        {
+            journal.UnlockNewLetter(mailboxId);
+        }
+        interrupted = false;
     }
 }

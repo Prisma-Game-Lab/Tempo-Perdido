@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - AreaPermitida
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Cogs
   - Water
   - UI
   - 
@@ -38,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 1016154763
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -4,20 +4,34 @@ using UnityEngine;
 
 public class Collectable : ClickManager
 {
+    public string key;
     public string itemName;
     public SpriteRenderer spriteRenderer;
 
+    void Start()
+    {
+        if (SceneObserver.playerData.HasItem(key))
+        {
+            Destroy(this.gameObject);
+        }
+    }
     public override IEnumerator MoveToPoint(Vector2 point)
     {
-        Debug.Log("Entrou");
         yield return base.MoveToPoint(point);
-        Collect();
+        movementSO.initialPosition = Player.position;
+        if (!interrupted)
+        {
+            Collect();
+        }
+        interrupted = false;
     }
 
     public void Collect()
     {
         InventoryManager im = FindObjectOfType<InventoryManager>();
         im.AddItem(this);
+        SceneObserver.playerData.CollectItem(key);
+        SceneObserver.SaveGame();
         Destroy(this.gameObject);
     }
 }
