@@ -426,6 +426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ecc0073ffa11141bb7a438ed1e73d8, type: 3}
+--- !u!1 &512495500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 197053859, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+  m_PrefabInstance: {fileID: 2031419638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &540061568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1517,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2032569051, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032569051, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032569051, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 512495500}
+    - target: {fileID: 2032569051, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032569051, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 380017941850614245, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1547,10 +1572,6 @@ PrefabInstance:
     - target: {fileID: 3728478495777700530, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
       propertyPath: m_Name
       value: MainCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728478495777700530, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3728478495777700534, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
       propertyPath: m_Pivot.x
