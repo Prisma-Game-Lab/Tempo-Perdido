@@ -17,6 +17,16 @@ public class InventorySO : ScriptableObject
             inventoryItems[i].qtd = 0;
             inventoryItems[i].sprite = null;
         }
+
+        int index = 0;
+
+        foreach (ItemSaveData item in SceneObserver.playerData.inventory)
+        {
+            inventoryItems[index].key = item.key;
+            inventoryItems[index].qtd = item.qtd;
+            index++;
+            Debug.Log("item");
+        }
     }
 
     public void AddItem(CollectableObject obj)

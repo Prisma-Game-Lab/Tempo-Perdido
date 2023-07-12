@@ -61,10 +61,22 @@ public class PlayerData
     public Dictionary<string, bool> collectedItens = new Dictionary<string, bool>();
     public Dictionary<string, bool> triggeredCutscenes = new Dictionary<string, bool>();
     public Dictionary<string, bool> completedPuzzles = new Dictionary<string, bool>();
+    public List<ItemSaveData> inventory = new List<ItemSaveData>();
 
     public PlayerData()
     {
         currentScene = "Game_Future";
+    }
+
+    public void KeepInventory(List<CollectableObject> items)
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            ItemSaveData item = new ItemSaveData();
+            item.key = items[i].key;
+            item.qtd = items[i].qtd;
+            inventory.Add(item);
+        }
     }
 
     public void CollectItem(string key)
@@ -79,6 +91,7 @@ public class PlayerData
     {
         return collectedItens.ContainsKey(key);
     }
+
     public void TriggerCutscene(string key)
     {
         if (!HasTriggered(key))
@@ -104,4 +117,11 @@ public class PlayerData
     {
         return completedPuzzles.ContainsKey(key);
     }
+}
+
+[System.Serializable]
+public class ItemSaveData
+{
+    public string key;
+    public int qtd;
 }

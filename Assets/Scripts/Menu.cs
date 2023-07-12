@@ -43,4 +43,26 @@ public class Menu : MonoBehaviour
         painelCreditos.SetActive(false);
     }
 
+    public void PauseGame()
+    {
+        Time.timeScale=0;
+    }
+
+    public void ContinueGame()
+    {
+        Time.timeScale=1;
+    }
+
+    public void SavePlayer()
+    {
+        SceneObserver.SaveGame();
+    }
+
+    public void LoadPlayer()
+    {
+        SceneObserver.playerData = SceneObserver.LoadGame();
+
+        SceneManager.LoadScene(SceneObserver.playerData.currentScene);
+    }
+
 }

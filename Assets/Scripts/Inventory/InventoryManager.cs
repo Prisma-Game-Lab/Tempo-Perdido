@@ -9,9 +9,18 @@ public class InventoryManager : MonoBehaviour
     public List<GameObject> inventoryItems = new List<GameObject>();
     public GameObject selector;
     private int selectedItem = 0;
+    public ItemVisuals visuals;
 
     void Start()
     {
+        for (int i = 0; i < 8; i++)
+        {
+            if (visuals.visuals.ContainsKey(inventory.inventoryItems[i].key))
+            {
+              inventory.inventoryItems[i].sprite = visuals.SetVisuals(inventory.inventoryItems[i].key);  
+            }
+        }
+
         UpdateView();
     }
 
@@ -26,12 +35,14 @@ public class InventoryManager : MonoBehaviour
         CollectableObject obj = new CollectableObject(collectable.itemName, collectable.spriteRenderer.sprite);
         inventory.AddItem(obj);
         UpdateView();
+        SceneObserver.playerData.KeepInventory(inventory.inventoryItems);
     }
 
     public void UseItem()
     {
         inventory.RemoveItem(selectedItem);
         UpdateView();
+        SceneObserver.playerData.KeepInventory(inventory.inventoryItems);
     }
 
     public void UpdateView()
