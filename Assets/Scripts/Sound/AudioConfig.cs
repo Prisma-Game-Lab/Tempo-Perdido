@@ -14,11 +14,14 @@ public class AudioConfig : MonoBehaviour
     private float volumeFloat;
     private float sfxFloat;
     private AudioManager _am;
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         _am = AudioManager.instance;
+    }
 
+    void Start()
+    {
         firstPlayInt = PlayerPrefs.GetInt(firstPlay);
 
         if (firstPlayInt == 0)
@@ -28,7 +31,7 @@ public class AudioConfig : MonoBehaviour
             PlayerPrefs.SetFloat(volumePref, volumeFloat);
 
             sfxFloat = 0.5f;
-            sfxSlider.value = volumeFloat;
+            sfxSlider.value = sfxFloat;
             PlayerPrefs.SetFloat(sfxPref, sfxFloat);
 
             PlayerPrefs.SetInt(firstPlay, -1);
@@ -49,7 +52,6 @@ public class AudioConfig : MonoBehaviour
     {
         PlayerPrefs.SetFloat(volumePref, volumeSlider.value);
         PlayerPrefs.SetFloat(sfxPref, sfxSlider.value);
-
     }
 
     private void OnApplicationFocus(bool inFocus)
@@ -68,11 +70,12 @@ public class AudioConfig : MonoBehaviour
         }
         SaveSoundSettings();
     }
+
     public void UpdateSfx()
     {
         foreach (Sound s in _am.sfx)
         {
-            s.source.volume = volumeSlider.value;
+            s.source.volume = sfxSlider.value;
         }
         SaveSoundSettings();
     }
