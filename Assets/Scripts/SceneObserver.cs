@@ -62,10 +62,16 @@ public class PlayerData
     public Dictionary<string, bool> triggeredCutscenes = new Dictionary<string, bool>();
     public Dictionary<string, bool> completedPuzzles = new Dictionary<string, bool>();
     public List<ItemSaveData> inventory = new List<ItemSaveData>();
+    public List<int> digits = new List<int>();
 
     public PlayerData()
     {
         currentScene = "Game_Future";
+
+        for (int i = 0; i < 4; i++)
+        {
+            digits.Add(Random.Range(0,10));
+        }
     }
 
     public void KeepInventory(List<CollectableObject> items)
