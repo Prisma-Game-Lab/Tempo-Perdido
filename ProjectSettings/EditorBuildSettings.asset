@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game_Past.unity
     guid: ea127ae8473fd264bbc969d971fe77ac
   - enabled: 1
+    path: Assets/Scenes/House_Future.unity
+    guid: 978de573f47c6ae4fa52c82688aa28af
+  - enabled: 1
     path: Assets/Scenes/GoodEnding.unity
     guid: 18b9948f6251e6c45a331d941e949016
   m_configObjects: {}
