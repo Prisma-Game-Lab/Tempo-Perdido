@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2644935682239889531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 0, z: 0}
+  m_LocalPosition: {x: 1.25, y: -0.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -185,7 +185,10 @@ MonoBehaviour:
     goToPoint: {fileID: 3044686038940708440}
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   interrupted: 0
+  key: 
   puzzleCanvas: {fileID: 7804901337207581392, guid: ecd78c007834c4f4a81d5f317ea7ea2b, type: 3}
+  completed: 0
+  puzzleName: 
 --- !u!114 &8387868741672102871
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,7 +9,8 @@ public static class SceneObserver
 {
     public static Dictionary<string, UnityEvent> puzzleEvents = new Dictionary<string, UnityEvent>()
     {
-        {"ChestPuzzle", new UnityEvent()}
+        {"ChestPuzzle", new UnityEvent()},
+        {"RecipePuzzle", new UnityEvent()},
     };
 
     public static PlayerData playerData = new PlayerData();
