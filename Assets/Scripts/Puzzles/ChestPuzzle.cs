@@ -12,11 +12,13 @@ public class ChestPuzzle : ClickManager
     [SerializeField] public GameObject handlePrefab;
 
     public bool isOpen;
+    private bool isFixed;
 
     private void OnEnable()
     {
         SceneObserver.puzzleEvents["ChestPuzzle"].AddListener(SpawnHandle);
         isOpen = SceneObserver.playerData.PuzzleHasCompleted(key);
+        isFixed = SceneObserver.playerData.PuzzleHasCompleted(key);
     }
 
     private void OnDisable()
@@ -28,7 +30,7 @@ public class ChestPuzzle : ClickManager
     {
         yield return base.MoveToPoint(point);
         movementSO.initialPosition = Player.position;
-        if (!interrupted)
+        if (!interrupted && isFixed)
         {
             InteractChest();
         }
@@ -37,10 +39,7 @@ public class ChestPuzzle : ClickManager
 
     public void InteractChest()
     {
-        CollectableObject hasHandle = inventory.inventoryItems.Find(x => x != null && x.key == "Handle");
-        int handle = hasHandle != null ? hasHandle.qtd : 0;
-
-        if (handle != 0)
+        if (isFixed)
         {
             isOpen = true;
             SceneObserver.playerData.CompletedPuzzles(key);
@@ -60,6 +59,11 @@ public class ChestPuzzle : ClickManager
     public void SpawnHandle()
     {
         handlePrefab.SetActive(true);
+    }
+
+    public void FixVault()
+    {
+        isFixed = true;
     }
 
 }
