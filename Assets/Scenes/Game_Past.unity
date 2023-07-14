@@ -3308,6 +3308,10 @@ PrefabInstance:
       propertyPath: floor
       value: 
       objectReference: {fileID: 1451338255}
+    - target: {fileID: 7237074626991302232, guid: cdfd6c5168068ee46b8d62bdc401abaa, type: 3}
+      propertyPath: limitObjectCollider
+      value: 
+      objectReference: {fileID: 1915253286}
     - target: {fileID: 7237074626991302238, guid: cdfd6c5168068ee46b8d62bdc401abaa, type: 3}
       propertyPath: m_Size.y
       value: 3.086914
