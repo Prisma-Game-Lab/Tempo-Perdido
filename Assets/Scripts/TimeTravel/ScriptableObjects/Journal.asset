@@ -23,9 +23,6 @@ MonoBehaviour:
           e o futuro,\r\nUma sa\xEDda desse escuro,\r\ndesse medo t\xE3o imaturo,\r\nque
           te deixa t\xE3o agoniado"
   unlockedLetters:
-  - letterText: "Menino, se avexe n\xE3o\r\nAnde com muita cautela\r\nVirando neste
-      mour\xE3o\r\nVer\xE1s como uma vela\r\nBem no meio da entrada\r\nSob l\xE2mpada
-      apagada\r\n\xC9 l\xE1 que encontrar\xE1 ela\r\n\r\nMas, no final do caminho.\r\nguardando
-      com carinho\r\nA chave para o passado,\r\no presente e o futuro,\r\nUma sa\xEDda
-      desse escuro,\r\ndesse medo t\xE3o imaturo,\r\nque te deixa t\xE3o agoniado"
+  - letterText: "Lista de compras: \n\n0. \xC1gua \n1. Hortel\xE3 \n2. Hortel\xE3
+      \n3. Lim\xE3o \n"
   canUnlockLetter: 0

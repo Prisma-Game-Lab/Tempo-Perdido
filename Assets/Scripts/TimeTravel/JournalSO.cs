@@ -30,6 +30,39 @@ public class JournalSO : ScriptableObject
             canUnlockLetter = false;
         }
     }
+
+    public void UnlockRecipe()
+    {
+        List<int> password = SceneObserver.playerData.digits;
+        string content = "Lista de compras: \n\n";
+
+
+        for (int i = 0; i < password.Count; i++)
+        {
+            content = content + (i + 1).ToString() + ". ";
+            switch (password[i])
+            {
+                case 0:
+                    content = content + "Água \n";
+                    break;
+                case 1:
+                    content = content + "Hortelã \n";
+                    break;
+                case 2:
+                    content = content + "Limão \n";
+                    break;
+                case 3:
+                    content = content + "Açúcar \n";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        Letters recipe = new Letters();
+        recipe.letterText = content;
+        unlockedLetters.Add(recipe);
+    }
 }
 
 [System.Serializable]
