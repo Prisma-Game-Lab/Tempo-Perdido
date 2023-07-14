@@ -50,19 +50,16 @@ public class ChestPuzzle : ClickManager
         if (isOpen)
         {
             spriteRenderer.sprite = openedSprite;
-            Debug.Log('A');
         }
         else
         {
             spriteRenderer.sprite = closedSprite;
-            Debug.Log('F');
         }
     }
 
     public void SpawnHandle()
     {
         handlePrefab.SetActive(true);
-        Debug.Log("spawn");
     }
 
 }

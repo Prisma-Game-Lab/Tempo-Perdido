@@ -25,7 +25,6 @@ public class InventorySO : ScriptableObject
             inventoryItems[index].key = item.key;
             inventoryItems[index].qtd = item.qtd;
             index++;
-            Debug.Log("item");
         }
     }
 

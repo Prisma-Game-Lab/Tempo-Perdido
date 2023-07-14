@@ -12,7 +12,6 @@ public class ObjectInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = true;
-            Debug.Log("ENTER");
         }
     }
 
@@ -21,12 +20,11 @@ public class ObjectInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = false;
-            Debug.Log("EXIT");
         }
     }
 
-    public void Interact(InputAction.CallbackContext ctx) 
-    { 
+    public void Interact(InputAction.CallbackContext ctx)
+    {
         if (ctx.performed && canInteract)
         {
             GetComponent<ClickManager>().Interact();
