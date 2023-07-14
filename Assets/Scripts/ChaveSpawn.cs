@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ChaveSpawn : ClickManager
 {
-
+    public float fallSpeed;
     public GameObject Chave;
     private bool falling = false;
 
@@ -13,20 +13,20 @@ public class ChaveSpawn : ClickManager
     {
         if (falling)
         {
-            transform.Translate(Vector3.down * 5.0f * Time.deltaTime);
+            transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
         }
     }
 
     public void AtivarChave()
     {
-        Chave.SetActive(true); 
+        Chave.SetActive(true);
     }
 
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
         movementSO.initialPosition = Player.position;
-        if(!interrupted)
+        if (!interrupted)
         {
             falling = true;
         }
