@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class BarPuzzle : MonoBehaviour
 {
     public List<int> digits = new List<int>();
     public bool isCompleted = false;
-    public List<TMP_Text> displays = new List<TMP_Text>();
+    public List<Image> displays = new List<Image>();
+    public List<Sprite> ingredients = new List<Sprite>();
     public GameObject RecipeObject;
     public string puzzleName;
     private int index = 0;
@@ -44,7 +45,7 @@ public class BarPuzzle : MonoBehaviour
             digits[index] = 3;
         }
 
-        displays[index].text = digits[index].ToString();
+        displays[index].sprite = ingredients[digits[index]];
         CheckDigits();
     }
 

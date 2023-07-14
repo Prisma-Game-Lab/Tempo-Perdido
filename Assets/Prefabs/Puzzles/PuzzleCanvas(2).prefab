@@ -1800,7 +1800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2759,11 +2759,10 @@ MonoBehaviour:
   - {fileID: 7804901335698316934}
   - {fileID: 7804901337204469103}
   cogSprites:
-  - {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  - {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  - {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  - {fileID: 21300000, guid: c2f8774d1589fc94e8fe7b36069560e9, type: 3}
+  - {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
+  - {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
   cogSelector: {fileID: 7804901335384403862}
-  puzzles: {fileID: 11400000, guid: a7b1ead80a3bfbb408df8039a77d0dd1, type: 2}
   puzzleName: 
 --- !u!1001 &7804901335114762489
 PrefabInstance:
@@ -2807,11 +2806,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2990,11 +2989,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3181,11 +3180,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3372,11 +3371,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3559,11 +3558,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3750,11 +3749,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3937,11 +3936,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4124,11 +4123,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4315,11 +4314,11 @@ PrefabInstance:
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 49e50ba0f5db5064c8aeafbf20f51f78, type: 3}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[2]
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+      objectReference: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
     - target: {fileID: 3539029127644251720, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
