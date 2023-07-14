@@ -16,14 +16,14 @@ public class ChestPuzzle : ClickManager
 
     private void OnEnable()
     {
-        SceneObserver.puzzleEvents["ChestPuzzle"].AddListener(SpawnHandle);
+        SceneObserver.puzzleEvents["ChestPuzzle"].AddListener(FixVault);
         isOpen = SceneObserver.playerData.PuzzleHasCompleted(key);
         isFixed = SceneObserver.playerData.PuzzleHasCompleted(key);
     }
 
     private void OnDisable()
     {
-        SceneObserver.puzzleEvents["ChestPuzzle"].RemoveListener(SpawnHandle);
+        SceneObserver.puzzleEvents["ChestPuzzle"].RemoveListener(FixVault);
     }
 
     public override IEnumerator MoveToPoint(Vector2 point)
@@ -39,10 +39,11 @@ public class ChestPuzzle : ClickManager
 
     public void InteractChest()
     {
-        if (isFixed)
+        if (isFixed && !isOpen)
         {
             isOpen = true;
             SceneObserver.playerData.CompletedPuzzles(key);
+            SpawnHandle();
             SceneObserver.SaveGame();
         }
 

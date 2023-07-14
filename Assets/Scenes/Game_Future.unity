@@ -478,6 +478,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3001242706571813075, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.685
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001242706571813075, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.671
+      objectReference: {fileID: 0}
     - target: {fileID: 3001242706571813077, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
       propertyPath: key
       value: CogM2F
@@ -4204,6 +4212,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3001242706571813075, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001242706571813075, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.193
+      objectReference: {fileID: 0}
     - target: {fileID: 3001242706571813077, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
       propertyPath: key
       value: CogL1F
@@ -4603,6 +4619,7 @@ MonoBehaviour:
     goToPoint: {fileID: 415574276240539623}
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   interrupted: 0
+  sceneIndex: 5
 --- !u!1001 &8204726897010771967
 PrefabInstance:
   m_ObjectHideFlags: 0

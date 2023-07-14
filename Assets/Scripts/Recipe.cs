@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Recipe : ClickManager
 {
+    public int sceneIndex;
     public override IEnumerator MoveToPoint(Vector2 point)
     {
         yield return base.MoveToPoint(point);
         movementSO.initialPosition = Player.position;
         if (!interrupted)
         {
-            SceneManager.LoadScene("GoodEnding");
+            SceneManager.LoadScene(sceneIndex);
         }
         interrupted = false;
     }
