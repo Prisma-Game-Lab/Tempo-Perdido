@@ -1553,8 +1553,12 @@ PrefabInstance:
       value: Recipe
       objectReference: {fileID: 0}
     - target: {fileID: 8635925446678423096, guid: 721f915a10693b6439369b53ce2f5125, type: 3}
+      propertyPath: objToSpawn
+      value: 
+      objectReference: {fileID: 1237662000}
+    - target: {fileID: 8635925446678423096, guid: 721f915a10693b6439369b53ce2f5125, type: 3}
       propertyPath: puzzleName
-      value: RecipePuzzle
+      value: BarPuzzle
       objectReference: {fileID: 0}
     - target: {fileID: 8635925446678423096, guid: 721f915a10693b6439369b53ce2f5125, type: 3}
       propertyPath: puzzleCanvas
@@ -4063,7 +4067,7 @@ MonoBehaviour:
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   interrupted: 0
   obj: {fileID: 2038779753}
-  RecipeObject: {fileID: 1237662000}
+  barPuzzleCanvas: {fileID: 5497755313519111355, guid: 0494ff0093f912b43af74767a555052b, type: 3}
 --- !u!4 &2038779759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4777116730207840012, guid: 721f915a10693b6439369b53ce2f5125, type: 3}

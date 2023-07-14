@@ -8,6 +8,7 @@ public class PuzzleObject : ClickManager
     public GameObject puzzleCanvas;
     public bool completed;
     public string puzzleName;
+    public GameObject objToSpawn;
 
     void Start()
     {
@@ -20,7 +21,14 @@ public class PuzzleObject : ClickManager
         if (!interrupted && !completed)
         {
             GameObject canvasInstance = Instantiate(puzzleCanvas, gameObject.transform.position, Quaternion.identity);
-            canvasInstance.GetComponent<CogsManager>().puzzleName = puzzleName;
+            if (canvasInstance.GetComponent<CogsManager>() != null)
+            {
+                canvasInstance.GetComponent<CogsManager>().puzzleName = puzzleName;
+            }
+            else if (canvasInstance.GetComponent<BarPuzzle>() != null)
+            {
+                canvasInstance.GetComponent<BarPuzzle>().RecipeObject = objToSpawn;
+            }
             SceneObserver.puzzleEvents[puzzleName].AddListener(Complete);
         }
         interrupted = false;

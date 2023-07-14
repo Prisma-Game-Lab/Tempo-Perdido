@@ -10,7 +10,7 @@ public static class SceneObserver
     public static Dictionary<string, UnityEvent> puzzleEvents = new Dictionary<string, UnityEvent>()
     {
         {"ChestPuzzle", new UnityEvent()},
-        {"RecipePuzzle", new UnityEvent()},
+        {"BarPuzzle", new UnityEvent()},
     };
 
     public static PlayerData playerData = new PlayerData();
@@ -71,7 +71,8 @@ public class PlayerData
 
         for (int i = 0; i < 4; i++)
         {
-            digits.Add(Random.Range(0,10));
+            digits.Add(Random.Range(0, 4));
+            Debug.Log(digits[i]);
         }
     }
 
