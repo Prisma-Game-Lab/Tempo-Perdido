@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7804901336456960537}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.22057329
+  m_Size: 0.22703446
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2793,15 +2793,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -2976,15 +2976,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -3167,15 +3167,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -3358,15 +3358,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -3545,15 +3545,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -3736,15 +3736,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -3923,15 +3923,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -4110,15 +4110,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
@@ -4297,15 +4297,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[0]
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[1]
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogRadius.Array.data[2]
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: cogSprites.Array.data[1]
