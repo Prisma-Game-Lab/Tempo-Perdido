@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Linq;
 
 public static class SceneObserver
 {
@@ -68,10 +69,12 @@ public class PlayerData
     public PlayerData()
     {
         currentScene = "Game_Future";
+        digits = new List<int>() { 0, 1, 2, 3 };
+        System.Random random = new System.Random();
+        digits = digits.OrderBy(x => random.Next()).ToList();
 
         for (int i = 0; i < 4; i++)
         {
-            digits.Add(Random.Range(0, 4));
             Debug.Log(digits[i]);
         }
     }
