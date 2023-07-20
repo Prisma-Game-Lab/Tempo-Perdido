@@ -12,11 +12,17 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     [SerializeField] public ItemData itemData;
     public MovementSO movementSO;
     public bool interrupted;
+    public GameObject popUp;
 
     private void Awake()
     {
         Player = GameObject.FindWithTag("Player").transform;
         movementSO.initialPosition = Player.position;
+        
+        if (popUp != null)
+        {
+            popUp.SetActive(false);
+        }
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -70,6 +76,22 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
         }
 
         movementSO.redirect = false;
+    }
+
+    public void OnHoverEnter()
+    {
+        if (popUp != null)
+        {
+            popUp.SetActive(true);
+        }
+    }
+
+    public void OnHoverExit()
+    {
+        if (popUp != null)
+        {
+            popUp.SetActive(false);
+        }
     }
 }
 

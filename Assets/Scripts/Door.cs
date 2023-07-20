@@ -35,4 +35,20 @@ public class Door : ClickManager
             dialogueManager.StartDialogue(monologue, false);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            OnHoverEnter();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            OnHoverExit();
+        }
+    }
 }

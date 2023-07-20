@@ -12,6 +12,7 @@ public class ObjectInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = true;
+            GetComponent<ClickManager>().OnHoverEnter();
         }
     }
 
@@ -20,6 +21,7 @@ public class ObjectInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = false;
+            GetComponent<ClickManager>().OnHoverExit();
         }
     }
 
