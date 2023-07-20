@@ -18,7 +18,7 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     {
         Player = GameObject.FindWithTag("Player").transform;
         movementSO.initialPosition = Player.position;
-        
+
         if (popUp != null)
         {
             popUp.SetActive(false);
@@ -26,7 +26,17 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
-    {
+    {   
+        if (itemData.goToPoint.position.x < Player.position.x)
+        {
+            Player.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        }
+        
+        else
+        {
+            Player.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        }
+
         Interact();
     }
 

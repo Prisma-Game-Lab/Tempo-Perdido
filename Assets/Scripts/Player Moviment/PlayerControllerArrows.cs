@@ -76,10 +76,12 @@ public class PlayerControllerArrows : MonoBehaviour
         if (moveVec.x > 0)
         {
             modex = 1;
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (moveVec.x < 0)
         {
             modex = -1;
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
