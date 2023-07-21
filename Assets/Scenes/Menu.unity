@@ -358,6 +358,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
   sounds: []
+  sounds:
+  - name: MenuIntro
+    clip: {fileID: 8300000, guid: 8385cf95efe66cf4a8d5e82b0b42e586, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BackgroundMain
+    clip: {fileID: 8300000, guid: f779edabc6285164ca3dcdf7fb01d610, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
   sfx:
   - name: Click
     clip: {fileID: 8300000, guid: 9a0be41ee593f8c4190cc5e441542d9a, type: 3}
@@ -397,6 +416,78 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: StepsWood
     clip: {fileID: 8300000, guid: 662177538f4ed3b41a3171aa08320aee, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ClickButton
+    clip: {fileID: 8300000, guid: e56d33d0c5f22544ebf5d33570303dd3, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: AddInInventory
+    clip: {fileID: 8300000, guid: bf0f71ee91a7a63428c5493ef0dcecaf, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: RemoveFromInventory
+    clip: {fileID: 8300000, guid: 6a1a4763d78798e478a3248de0964107, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: MailBoxAnimation
+    clip: {fileID: 8300000, guid: 17b54fd55d630d240a79308d20ddc5c7, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: OpenLetter
+    clip: {fileID: 8300000, guid: 8b60b1de863ea354988967509400a674, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ChoiceReaction
+    clip: {fileID: 8300000, guid: c171488a14b396848b62ccc6a80b55c2, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TimeTravel
+    clip: {fileID: 8300000, guid: 279abdc35d9a1b544afee49db89620fc, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TimeTravelReversed
+    clip: {fileID: 8300000, guid: c3caf3815228c2544805df488ba10896, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
