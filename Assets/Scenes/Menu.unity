@@ -357,7 +357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
-  sounds: []
   sounds:
   - name: MenuIntro
     clip: {fileID: 8300000, guid: 8385cf95efe66cf4a8d5e82b0b42e586, type: 3}
