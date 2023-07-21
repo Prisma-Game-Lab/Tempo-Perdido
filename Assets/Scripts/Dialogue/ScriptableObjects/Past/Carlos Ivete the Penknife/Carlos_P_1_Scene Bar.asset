@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Clock_P_1_Scene 1
+  m_Name: Carlos_P_1_Scene Bar
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - name: Tobe
-      sentence: Entendeu o que eu quis dizer?
-  answersDialogues:
-  - {fileID: 11400000, guid: 31e39d7dfd4b38f4d936d82798e60917, type: 2}
-  answers:
-  - Acho que sim
+    - name: Carlos Ivete Canivete
+      sentence: "Zeca, vim aqui hoje por outro motivo. \nQueria saber se ouviu alguma
+        coisa do Chico? Estava precisando falar uma coisa com ele.\r"
+  answersDialogues: []
+  answers: []

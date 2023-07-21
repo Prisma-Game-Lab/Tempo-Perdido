@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Tobe_P_2_Scene 1
+  m_Name: Zeca_P_2_Scene Bar
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - name: 'Tobe '
-      sentence: "Venha at\xE9 mim sempre que precisar de ajuda."
-  answersDialogues: []
+    - name: Zeca Caneca
+      sentence: "Que tipo de coisa?.\nSabe que eu gosto de uma boa fofoca n\xE9 hahaha"
+  answersDialogues:
+  - {fileID: 11400000, guid: 3b0311301a99bef428b34143aa481cca, type: 2}
   answers: []

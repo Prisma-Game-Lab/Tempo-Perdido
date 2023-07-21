@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
+  m_Name: Clock_P_6_Scene Final A
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - name: Carlos
+      sentence: "Era necess\xE1rio\u2026\r\n"
+  answersDialogues:
+  - {fileID: 11400000, guid: dbcfbe3e52c747f46b300ebde1339fb1, type: 2}
+  answers: []

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
+  m_Name: Clock_P_5_Scene Final A
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - name: 'Carlos '
+      sentence: "Eu sou a prova disso\u2026 ou melhor, n\xF3s somos. A foto n\xE3o
+        \xE9 falsa, eu sou voc\xEA, preso a esse loop temporal. Sabe o porqu\xEA?
+        Porque abusei desse poder, e fui punido."
+  answersDialogues:
+  - {fileID: 11400000, guid: 68db80d2c7139214e9bc7813a6385c42, type: 2}
+  answers: []
