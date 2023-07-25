@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/House_Past.unity
     guid: f17dffb5692a744498798038140bea8e
   - enabled: 1
+    path: Assets/Scenes/House_Past.unity
+    guid: 44e831f354cbf8049b0988085cd996f2
+  - enabled: 1
     path: Assets/Scenes/GoodEnding.unity
     guid: 18b9948f6251e6c45a331d941e949016
   m_configObjects: {}

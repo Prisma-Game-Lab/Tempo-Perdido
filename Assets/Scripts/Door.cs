@@ -10,6 +10,7 @@ public class Door : ClickManager
     public int sceneIndex;
     public string requiredKey;
     public DialogueManager dialogueManager;
+    public bool isOpen;
 
 
     public override IEnumerator MoveToPoint(Vector2 point)
@@ -25,7 +26,7 @@ public class Door : ClickManager
 
     private void ChangeScene()
     {
-        if (inventory.inventoryItems.Find(x => x.key == requiredKey) != null)
+        if (isOpen || inventory.inventoryItems.Find(x => x.key == requiredKey) != null)
         {
             SceneManager.LoadScene(sceneIndex);
         }
