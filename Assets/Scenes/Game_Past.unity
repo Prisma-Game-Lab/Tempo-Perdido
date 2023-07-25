@@ -608,6 +608,7 @@ MonoBehaviour:
   sceneIndex: 5
   requiredKey: HouseKey
   dialogueManager: {fileID: 0}
+  isOpen: 1
 --- !u!50 &488822280
 Rigidbody2D:
   serializedVersion: 4
