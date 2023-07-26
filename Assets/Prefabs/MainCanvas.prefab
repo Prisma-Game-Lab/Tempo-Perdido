@@ -5812,7 +5812,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3728478496953741887
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5946,8 +5946,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: pipipipopopo...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c1be22f1066b8c94cb077e4d8e26209d, type: 2}
+  m_sharedMaterial: {fileID: 8714829747173019856, guid: c1be22f1066b8c94cb077e4d8e26209d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
