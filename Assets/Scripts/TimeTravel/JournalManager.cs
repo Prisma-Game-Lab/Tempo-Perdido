@@ -11,10 +11,26 @@ public class JournalManager : MonoBehaviour
     [Header("UI elements")]
     [SerializeField] private GameObject journalCanvas;
     [SerializeField] private TMP_Text journalText;
+    [SerializeField] private GameObject journalPopup;
     private int currentIndex = 0;
+
+    private void OnEnable()
+    {
+        journal.recieveLetterEvent.AddListener(EnablePopup);
+    }
+
+    private void OnDisable()
+    {
+        journal.recieveLetterEvent.RemoveListener(EnablePopup);
+    }
 
     public void OpenJournal()
     {
+        if (journalPopup.activeSelf)
+        {
+            journalPopup.SetActive(false);
+        }
+
         if (journalCanvas.gameObject.activeSelf)
         {
             journalCanvas.gameObject.SetActive(false);
@@ -50,5 +66,10 @@ public class JournalManager : MonoBehaviour
 
             journalText.text = journal.unlockedLetters[currentIndex].letterText;
         }
+    }
+
+    private void EnablePopup()
+    {
+        journalPopup.SetActive(true);
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "Journal", menuName = "ScriptableObjects/Journal")]
 public class JournalSO : ScriptableObject
@@ -9,9 +10,15 @@ public class JournalSO : ScriptableObject
     private SerializableDictionary<string, List<Letters>> unlockedLettersByMailbox = new SerializableDictionary<string, List<Letters>>();
     public List<Letters> unlockedLetters = new List<Letters>();
     public bool canUnlockLetter = false;
+    public UnityEvent recieveLetterEvent;
 
     public void OnEnable()
     {
+        if (recieveLetterEvent == null)
+        {
+            recieveLetterEvent = new UnityEvent();
+        }
+
         unlockedLettersByMailbox.Clear();
         unlockedLetters.Clear();
     }
@@ -28,6 +35,7 @@ public class JournalSO : ScriptableObject
             unlockedLetters.Add(totalLetters[mailboxId][unlockedLettersByMailbox[mailboxId].Count]);
             unlockedLettersByMailbox[mailboxId].Add(totalLetters[mailboxId][unlockedLettersByMailbox[mailboxId].Count]);
             canUnlockLetter = false;
+            recieveLetterEvent?.Invoke();
         }
     }
 
