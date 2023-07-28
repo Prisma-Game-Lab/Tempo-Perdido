@@ -305,8 +305,8 @@ MonoBehaviour:
   - {fileID: 569373396}
   - {fileID: 368246029}
   m_Bounds:
-    m_Center: {x: -1.4323859, y: -1.346756, z: 0}
-    m_Extent: {x: 4.785918, y: 10.458551, z: 0}
+    m_Center: {x: -1.7385001, y: -1.4489565, z: 0}
+    m_Extent: {x: 4.536515, y: 10.384855, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -611,14 +611,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411688825}
-  m_LocalRotation: {x: 0, y: 0, z: 0.37673205, w: 0.9263223}
-  m_LocalPosition: {x: 4.079299, y: 1.2459701, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.47648883, w: 0.87918055}
+  m_LocalPosition: {x: 4.079381, y: 1.2459946, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 830482310}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.913}
 --- !u!1 &569373395
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +662,7 @@ GameObject:
   - component: {fileID: 575053555}
   - component: {fileID: 575053554}
   - component: {fileID: 575053553}
+  - component: {fileID: 575053556}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -735,6 +736,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &575053556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575053552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &609029789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222897516}
   m_LocalRotation: {x: 0, y: 0, z: -0.07924443, w: 0.99685526}
-  m_LocalPosition: {x: 1.2916234, y: 0.13658845, z: 0}
+  m_LocalPosition: {x: 1.06, y: 0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1659,8 +1693,8 @@ MonoBehaviour:
   - {fileID: 69067708}
   - {fileID: 1688474981}
   m_Bounds:
-    m_Center: {x: 0.614907, y: 1.49195, z: 0}
-    m_Extent: {x: 3.271304, y: 11.240193, z: 0}
+    m_Center: {x: 0.8507683, y: 1.1666603, z: 0}
+    m_Extent: {x: 3.3028686, y: 10.888395, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
