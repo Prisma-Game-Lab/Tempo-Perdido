@@ -475,8 +475,8 @@ MonoBehaviour:
   - {fileID: 5589857100836086913}
   - {fileID: 691168520707344388}
   m_Bounds:
-    m_Center: {x: -0.5243933, y: 2.3503027, z: 0}
-    m_Extent: {x: 3.2713048, y: 11.240194, z: 0}
+    m_Center: {x: -0.5243943, y: 2.3503027, z: 0}
+    m_Extent: {x: 3.2713041, y: 11.240194, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -847,6 +847,7 @@ MonoBehaviour:
   floor: {fileID: 0}
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   limitObjectCollider: {fileID: 0}
+  animator: {fileID: 2255953867969423906}
 --- !u!1 &7310505775087538357
 GameObject:
   m_ObjectHideFlags: 0

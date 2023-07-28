@@ -8,6 +8,7 @@ public class PlayerControllerArrows : MonoBehaviour
     [SerializeField] private ClickManager floor;
     [SerializeField] private MovementSO movementSO;
     [SerializeField] private Collider2D limitObjectCollider;
+    [SerializeField] private Animator animator;
     private float speed;
     private float run;
     private float currentSpeed;
@@ -69,9 +70,15 @@ public class PlayerControllerArrows : MonoBehaviour
         Vector2 moveVec = ctx.ReadValue<Vector2>();
 
         if (moveVec != Vector2.zero)
+        {
+            animator.SetBool("walking", true);
             moving = true;
+        }
         else
+        {
+            animator.SetBool("walking", false);
             moving = false;
+        }
 
         if (moveVec.x > 0)
         {
