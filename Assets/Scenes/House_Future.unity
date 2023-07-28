@@ -4616,6 +4616,7 @@ GameObject:
   - component: {fileID: 4983989955370995089}
   - component: {fileID: 4983989955370995088}
   - component: {fileID: 4983989955370995087}
+  - component: {fileID: 4983989955370995090}
   m_Layer: 0
   m_Name: receita
   m_TagString: Untagged
@@ -4663,7 +4664,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3961407350520426931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.73, y: 3.2, z: 0}
+  m_LocalPosition: {x: 33.73, y: 2.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4847,6 +4848,26 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4983989955370995090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3961407350520426931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44ad98f8cae64e4fb8408ba45f6a377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  itemData:
+    goToPoint: {fileID: 1919740334908093765}
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
+  interrupted: 0
+  popUp: {fileID: 1589948303169289937}
+  isClock: 0
+  dialogue: {fileID: 11400000, guid: ca770bfad4cc074478f941852054606f, type: 2}
 --- !u!1 &5748804635893733257
 GameObject:
   m_ObjectHideFlags: 0
