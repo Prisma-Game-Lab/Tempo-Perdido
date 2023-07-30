@@ -1555,10 +1555,11 @@ GameObject:
   m_Component:
   - component: {fileID: 651593749}
   - component: {fileID: 651593748}
-  - component: {fileID: 651593747}
   - component: {fileID: 651593751}
   - component: {fileID: 651593750}
+  - component: {fileID: 651593747}
   - component: {fileID: 651593752}
+  - component: {fileID: 651593753}
   m_Layer: 0
   m_Name: Lamparina
   m_TagString: Untagged
@@ -1689,7 +1690,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.15393484}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1700,7 +1701,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.3078697}
   m_EdgeRadius: 0
 --- !u!114 &651593752
 MonoBehaviour:
@@ -1747,6 +1748,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &651593753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651593746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e33f935a0665f4b80887c78bb95c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &747065505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7237074626991302183, guid: cdfd6c5168068ee46b8d62bdc401abaa, type: 3}
