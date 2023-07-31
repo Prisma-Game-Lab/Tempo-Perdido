@@ -24,7 +24,7 @@ public class Pin : MonoBehaviour
     public Cogs rightCog;
 
     public Cogs currentCog;
-    private Image image;
+    private Image image; 
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +59,21 @@ public class Pin : MonoBehaviour
                 break;
             default:
                 break;
+        }
+        
+        if (currentCog == rightCog)
+        {
+            if (image.gameObject.GetComponent<ObjectRotation>() == null)
+            {
+                image.gameObject.AddComponent<ObjectRotation>();
+            }
+        }
+        else
+        {
+            if (image.gameObject.GetComponent<ObjectRotation>() != null)
+            {
+                GetComponent<ObjectRotation>().StopRotation();
+            }
         }
     }
 
