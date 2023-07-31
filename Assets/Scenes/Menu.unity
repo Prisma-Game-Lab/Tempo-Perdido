@@ -358,8 +358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
   sounds:
-  - name: MenuIntro
-    clip: {fileID: 8300000, guid: 8385cf95efe66cf4a8d5e82b0b42e586, type: 3}
+  - name: Menu
+    clip: {fileID: 0}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -367,8 +367,80 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: BackgroundMain
-    clip: {fileID: 8300000, guid: f779edabc6285164ca3dcdf7fb01d610, type: 3}
+  - name: MainTheme
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: FriendStreet
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: FriendHouse
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ThePub
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TrueEnding
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: AlternativeEnding
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ClockHead
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: MugHead
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: CupHead
+    clip: {fileID: 0}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -487,6 +559,186 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: TimeTravelReversed
     clip: {fileID: 8300000, guid: c3caf3815228c2544805df488ba10896, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: 'GearFit '
+    clip: {fileID: 8300000, guid: 9d4468d0588d6e5459d72d33b4f2fd18, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: 'GearCleared  '
+    clip: {fileID: 8300000, guid: 01d2243deb8645646b3e3affd2127b20, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: RecipeCleared
+    clip: {fileID: 8300000, guid: 245f459556c46ff449fe6660a685cc5d, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: MakeDrink
+    clip: {fileID: 8300000, guid: a8c49e0bb1ebd734a8730097a145978d, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: 'TakeDrink '
+    clip: {fileID: 8300000, guid: a3ae3f0b1265f9b4c82be415c133b3e7, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SpeechBubble
+    clip: {fileID: 8300000, guid: ad8f8f6ec4b8d8b4ba18aa4ebff7bfad, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SpeechNext
+    clip: {fileID: 8300000, guid: f933b8bf18807d14badeb4d3a2780b05, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SpeechAnswer
+    clip: {fileID: 8300000, guid: 159b0a77cc15b3f48b34465f1ff3c8c2, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: 'Surprise '
+    clip: {fileID: 8300000, guid: de70850b906b6124c96f39a9f395c9de, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: NoLetter
+    clip: {fileID: 8300000, guid: 8e4cc48d93403754fa0e94f11347e64e, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: GameStart
+    clip: {fileID: 8300000, guid: 17b9391c6b8962d478b242f77cef9369, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: UnlockDoor
+    clip: {fileID: 8300000, guid: a691d0749ab58b94d8a94a08cf3b963e, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: OpenDoor
+    clip: {fileID: 8300000, guid: d2bafa5c4b3d95b4fb64858bbdb1e7cc, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: CloseDoor
+    clip: {fileID: 8300000, guid: d0b5ae3f12727d54c8d92e1f79df5805, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BrokenLamp
+    clip: {fileID: 8300000, guid: 601d1ce5fb87a314f837a649464c09f2, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Key
+    clip: {fileID: 8300000, guid: 222820fda38710147a319feca97891ce, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: EnterPub
+    clip: {fileID: 8300000, guid: accd7d1ddbab2fd4c98e5687b4704b2c, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: WeatherVane
+    clip: {fileID: 8300000, guid: e5c17b1738125904086809ebcb557f79, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: AmbiencePub
+    clip: {fileID: 8300000, guid: c04861c3b7c91b144b3b23d97e1a9bbd, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: AmbienceStreet
+    clip: {fileID: 8300000, guid: e32654094f493e449928210695055e2b, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -1900,7 +2152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.69900006}
   m_AnchorMax: {x: 0.6, y: 0.799}
-  m_AnchoredPosition: {x: -27.600433, y: -8.716812}
+  m_AnchoredPosition: {x: -27.600433, y: -8.716797}
   m_SizeDelta: {x: -71.1251, y: 2.3462}
   m_Pivot: {x: 0.061713852, y: 0.5}
 --- !u!114 &1281838883
