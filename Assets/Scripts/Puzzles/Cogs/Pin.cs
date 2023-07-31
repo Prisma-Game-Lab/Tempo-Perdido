@@ -60,21 +60,7 @@ public class Pin : MonoBehaviour
             default:
                 break;
         }
-        
-        if (currentCog == rightCog)
-        {
-            if (image.gameObject.GetComponent<ObjectRotation>() == null)
-            {
-                image.gameObject.AddComponent<ObjectRotation>();
-            }
-        }
-        else
-        {
-            if (image.gameObject.GetComponent<ObjectRotation>() != null)
-            {
-                GetComponent<ObjectRotation>().StopRotation();
-            }
-        }
+        RotationFeedback();        
     }
 
     public bool CheckPlacement(string cogType)
@@ -98,6 +84,24 @@ public class Pin : MonoBehaviour
         else
         {
             return true;
+        }
+    }
+
+    public void RotationFeedback()
+    {
+        if (currentCog == rightCog)
+        {
+            if (image.gameObject.GetComponent<ObjectRotation>() == null)
+            {
+                image.gameObject.AddComponent<ObjectRotation>();
+            }
+        }
+        else
+        {
+            if (image.gameObject.GetComponent<ObjectRotation>() != null)
+            {
+                GetComponent<ObjectRotation>().StopRotation();
+            }
         }
     }
 }
