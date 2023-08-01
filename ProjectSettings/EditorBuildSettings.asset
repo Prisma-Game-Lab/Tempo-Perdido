@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/House_Past.unity
     guid: 996588c44ac8dfe4ca9d967a0ab5964d
   - enabled: 1
+    path: Assets/Scenes/Bar_Future.unity
+    guid: f97e3eb52152c2a47b80400027efece6
+  - enabled: 1
+    path: Assets/Scenes/Bar_Past.unity
+    guid: 96fc703b811599040a9d63a78a7b5ce7
+  - enabled: 1
     path: Assets/Scenes/GoodEnding.unity
     guid: 18b9948f6251e6c45a331d941e949016
   m_configObjects: {}
