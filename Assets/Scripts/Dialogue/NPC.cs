@@ -5,7 +5,9 @@ using UnityEngine;
 public class NPC : ClickManager
 {
     public bool isClock;
+    public bool isRooster;
     public DialogueSO dialogue;
+    public DialogueSO endDialogue;
 
     public override IEnumerator MoveToPoint(Vector2 point)
     {
@@ -21,7 +23,21 @@ public class NPC : ClickManager
     public void TriggerDialogue()
     {
         DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
-        dialogueManager.EnqueueDialogue(dialogue.dialogue);
-        dialogueManager.StartDialogue(dialogue, isClock);
+        if (SceneObserver.playerData.HasItem("Garrafa") && !SceneObserver.playerData.hasTriggeredEnd && isClock)
+        {
+            dialogueManager.EnqueueDialogue(endDialogue.dialogue);
+            dialogueManager.StartDialogue(endDialogue, !isClock);
+            SceneObserver.playerData.hasTriggeredEnd = true;
+        }
+        else if (isRooster && SceneObserver.playerData.hasTriggeredEnd)
+        {
+            dialogueManager.EnqueueDialogue(endDialogue.dialogue);
+            dialogueManager.StartDialogue(endDialogue, isClock, isRooster);
+        }
+        else
+        {
+            dialogueManager.EnqueueDialogue(dialogue.dialogue);
+            dialogueManager.StartDialogue(dialogue, isClock);
+        }
     }
 }

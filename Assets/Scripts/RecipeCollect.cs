@@ -7,6 +7,14 @@ public class RecipeCollect : MonoBehaviour
     [SerializeField] private JournalSO journal;
     void OnDisable()
     {
-        journal.UnlockRecipe();
+        Collectable collectable = GetComponent<Collectable>();
+        if (collectable.key == "Handle")
+        {
+            journal.UnlockRecipe();
+        }
+        else if (collectable.key == "Garrafa")
+        {
+            journal.UnlockBottle();
+        }
     }
 }

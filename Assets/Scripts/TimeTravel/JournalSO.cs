@@ -71,6 +71,15 @@ public class JournalSO : ScriptableObject
         recipe.letterText = content;
         unlockedLetters.Add(recipe);
     }
+
+    public void UnlockBottle()
+    {
+        string content = "Uma núvem média em cima \n Um grande sol no meio \n Um pequeno pássaro embaixo";
+
+        Letters recipe = new Letters();
+        recipe.letterText = content;
+        unlockedLetters.Add(recipe);
+    }
 }
 
 [System.Serializable]

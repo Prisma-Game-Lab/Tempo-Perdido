@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,12 +12,7 @@ public class InventorySO : ScriptableObject
 
     private void OnEnable()
     {
-        for (int i = 0; i < inventoryCapacity; i++)
-        {
-            inventoryItems[i].key = "";
-            inventoryItems[i].qtd = 0;
-            inventoryItems[i].sprite = null;
-        }
+        ClearInventory();
 
         int index = 0;
 
@@ -59,6 +55,16 @@ public class InventorySO : ScriptableObject
             inventoryItems[index].key = "";
             inventoryItems[index].qtd = 0;
             inventoryItems[index].sprite = null;
+        }
+    }
+
+    internal void ClearInventory()
+    {
+        for (int i = 0; i < inventoryCapacity; i++)
+        {
+            inventoryItems[i].key = "";
+            inventoryItems[i].qtd = 0;
+            inventoryItems[i].sprite = null;
         }
     }
 }

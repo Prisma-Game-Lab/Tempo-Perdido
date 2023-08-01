@@ -59,6 +59,7 @@ public static class SceneObserver
 [System.Serializable]
 public class PlayerData
 {
+    public bool hasTriggeredEnd;
     public string currentScene;
     public Dictionary<string, bool> collectedItens = new Dictionary<string, bool>();
     public Dictionary<string, bool> triggeredCutscenes = new Dictionary<string, bool>();
@@ -68,15 +69,29 @@ public class PlayerData
 
     public PlayerData()
     {
+        hasTriggeredEnd = false;
         currentScene = "Game_Future";
         digits = new List<int>() { 0, 1, 2, 3 };
         System.Random random = new System.Random();
         digits = digits.OrderBy(x => random.Next()).ToList();
 
+        collectedItens = new Dictionary<string, bool>();
+        triggeredCutscenes = new Dictionary<string, bool>();
+        completedPuzzles = new Dictionary<string, bool>();
+        inventory = new List<ItemSaveData>();
+
         for (int i = 0; i < 4; i++)
         {
             Debug.Log(digits[i]);
         }
+    }
+
+    public void ResetLoop()
+    {
+        collectedItens.Clear();
+        triggeredCutscenes.Clear();
+        completedPuzzles.Clear();
+        inventory.Clear();
     }
 
     public void KeepInventory(List<CollectableObject> items)

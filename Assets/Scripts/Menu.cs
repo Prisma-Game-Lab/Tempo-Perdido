@@ -9,35 +9,36 @@ public class Menu : MonoBehaviour
     public GameObject painelOpcoes;
     public GameObject painelCreditos;
 
-    public void IniciarJogo (int sceneIndex)
+    public void IniciarJogo(int sceneIndex)
     {
+        SceneObserver.playerData = new PlayerData();
         SceneManager.LoadScene(sceneIndex);
     }
 
-    public void BotaoOpcoes () 
+    public void BotaoOpcoes()
     {
         painelMenuInicial.SetActive(false);
         painelOpcoes.SetActive(true);
     }
-    
-    public void BotaoOpcoesVoltar () 
+
+    public void BotaoOpcoesVoltar()
     {
         painelMenuInicial.SetActive(true);
         painelOpcoes.SetActive(false);
     }
 
-    public void SairJogo ()
+    public void SairJogo()
     {
         Application.Quit();
     }
-    
-    public void BotaoCreditos () 
+
+    public void BotaoCreditos()
     {
         painelMenuInicial.SetActive(false);
         painelCreditos.SetActive(true);
     }
 
-    public void BotaoCreditosVoltar () 
+    public void BotaoCreditosVoltar()
     {
         painelMenuInicial.SetActive(true);
         painelCreditos.SetActive(false);
@@ -45,12 +46,12 @@ public class Menu : MonoBehaviour
 
     public void PauseGame()
     {
-        Time.timeScale=0;
+        Time.timeScale = 0;
     }
 
     public void ContinueGame()
     {
-        Time.timeScale=1;
+        Time.timeScale = 1;
     }
 
     public void SavePlayer()
