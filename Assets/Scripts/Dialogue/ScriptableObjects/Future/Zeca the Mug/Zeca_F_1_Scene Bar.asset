@@ -15,9 +15,14 @@ MonoBehaviour:
   dialogue:
     sentences:
     - name: Zeca Caneca
-      sentence: "Opa!, tudo bem Carlos?\nPena voc\xEA ter chegado agora. \nA M\xC1QUINA
-        DE BEBIDAS acabou de quebrar. O \xFAltimo cabe\xE7a de bagre que usou ela
-        conseguiu desregular tudo!\r"
+      sentence: "Opa!, tudo bem Carlos?\nPena voc\xEA ter chegado agora. A M\xC1QUINA
+        DE BEBIDAS acabou de quebrar.\n"
+    - name: Zeca Caneca
+      sentence: "O \xFAltimo cabe\xE7a de bagre que usou ela conseguiu desregular
+        tudo!\r"
+    - name: Zeca Caneca
+      sentence: "Vai fazer o meu dia se voc\xEA conseguir concertar ela. Se conseguir,
+        pode usar ela por 1 semana de gra\xE7a!\r"
   answersDialogues:
   - {fileID: 11400000, guid: 2a51f08de23354545b27220b57a14c6a, type: 2}
   answers: []
