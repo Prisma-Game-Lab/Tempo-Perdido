@@ -2064,7 +2064,7 @@ MonoBehaviour:
   popUp: {fileID: 277199087}
   monologue: {fileID: 0}
   inventory: {fileID: 11400000, guid: 988efbe2b7caf4a47b877346e8a9c4f1, type: 2}
-  sceneIndex: 4
+  sceneIndex: 6
   requiredKey: 
   dialogueManager: {fileID: 459181890}
   isOpen: 0
