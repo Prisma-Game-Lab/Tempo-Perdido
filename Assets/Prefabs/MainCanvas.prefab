@@ -5469,7 +5469,7 @@ MonoBehaviour:
       - Key: CogS
         Value: {fileID: 21300000, guid: 05d0bb9acfab4ed44ad69c81c87a004c, type: 3}
       - Key: Handle
-        Value: {fileID: 21300000, guid: 6944ee4a3d683b54397a26a47d355f90, type: 3}
+        Value: {fileID: 21300000, guid: c1ba54dd86a5a3447a39c85030bf43b9, type: 3}
       - Key: HouseKey
         Value: {fileID: 21300000, guid: 3f37e6c1329d68c45aba269d37ac516a, type: 3}
 --- !u!1 &3728478495904368890
