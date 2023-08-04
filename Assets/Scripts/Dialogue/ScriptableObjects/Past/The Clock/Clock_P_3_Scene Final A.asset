@@ -14,35 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - name: Carlos
-      sentence: "A foto\u2026 \nO que isso significa?, o que voc\xEA sabe sobre isso?"
+    - name: Carlos Ivete Canivete
+      sentence: "A foto\u2026, o laudo...\nO que isso significa?, o que voc\xEA sabe
+        sobre isso?"
     - name: ???
       sentence: "Voc\xEA diz que n\xE3o sabe, mas no fundo voc\xEA sabe. Tudo isso
         \xE9 in\xFAtil Carlos\u2026"
-    - name: Carlos
+    - name: Carlos Ivete Canivete
       sentence: "Imposs\xEDvel!, \xE9 mentira. Voc\xEA me deu esse poder. Tem que
-        ter uma solu\xE7\xE3o.\r"
+        ter uma solu\xE7\xE3o"
     - name: ???
       sentence: "O tempo\u2026 \xE9 imposs\xEDvel mud\xE1-lo. \xC9 assim que a realidade
         funciona. Voc\xEA s\xF3 estaria correndo em c\xEDrculos.\r"
-    - name: Carlos
+    - name: Carlos Ivete Canivete
       sentence: "PARA! Voc\xEA deve estar inventando. N\xE3o tem como provar!\r"
-    - name: ???
-      sentence: "Eu sou a prova disso\u2026 ou melhor, n\xF3s somos. A foto n\xE3o
-        \xE9 falsa, eu sou voc\xEA, preso a esse loop temporal. Sabe o porqu\xEA?
-        Porque abusei desse poder, e fui punido."
-    - name: Carlos
+    - name: "Carlos Rel\xF3gio"
+      sentence: "Eu sou a prova disso\u2026 ou melhor, n\xF3s somos."
+    - name: "Carlos Rel\xF3gio"
+      sentence: "A foto n\xE3o \xE9 falsa, eu sou voc\xEA, preso a esse loop temporal.
+        Sabe o porqu\xEA? Porque abusei desse poder, e fui punido."
+    - name: Carlos Ivete Canivete
       sentence: "Mas se tudo isso \xE9 verdade, por que voc\xEA me permitiu viajar
-        no tempo?\r"
-    - name: ???
+        no tempo?\r, por que me permitiu tentar salv\xE1lo?"
+    - name: "Carlos Rel\xF3gio"
       sentence: "Era necess\xE1rio\u2026\r"
-    - name: Carlos
+    - name: Carlos Ivete Canivete
       sentence: "Ent\xE3o\u2026 Por que voc\xEA s\xF3 n\xE3o disse isso desde o in\xEDcio\u2026\r"
-    - name: ???
-      sentence: "Voc\xEA acreditaria?\r\n"
-    - name: Carlos
+    - name: "Carlos Rel\xF3gio"
+      sentence: "Voc\xEA acreditaria?\r.\n"
+    - name: Carlos Ivete Canivete
       sentence: ....
-    - name: ???
+    - name: "Carlos Rel\xF3gio"
       sentence: "A resposta sempre esteve no galo\u2026\r"
   answersDialogues:
   - {fileID: 11400000, guid: b6a6f6e9331c31244b514a98889dc56a, type: 2}

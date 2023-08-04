@@ -5035,5 +5035,5 @@ MonoBehaviour:
   popUp: {fileID: 0}
   isClock: 0
   isRooster: 0
-  dialogue: {fileID: 11400000, guid: 830c6b25e27daac4cb87dd0c9d96886c, type: 2}
+  dialogue: {fileID: 11400000, guid: 2a8d0509673c3ee48b9d01f97b10b558, type: 2}
   endDialogue: {fileID: 0}

@@ -6342,6 +6342,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1462268156359486574, guid: d762cd1037892344c9c7e32ed9f8268f, type: 3}
+      propertyPath: monologue
+      value: 
+      objectReference: {fileID: 11400000, guid: ddc1d9bb34c95c64eb38ec39b7c885e5, type: 2}
     - target: {fileID: 1462268156359486575, guid: d762cd1037892344c9c7e32ed9f8268f, type: 3}
       propertyPath: m_Name
       value: CutsceneTrigger

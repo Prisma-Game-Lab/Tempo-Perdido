@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Clock_F_1_Scene 1
+  m_Name: Carlos_F_Scene_2_Foto_e_Receita
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - name: ???
-      sentence: "Tenho observado voc\xEA indo de um lado pro outro nessa cidade procurando
-        seu amigo. Conhe\xE7o uma forma de ajud\xE1-lo\n"
     - name: Carlos Ivete Canivete
-      sentence: "Quem \xE9 voc\xEA?, voc\xEA sabe algo sobre o Chico?\n"
-    - name: ???
-      sentence: "Isso n\xE3o importa agora, suas respostas n\xE3o est\xE3o aqui,
-        se voc\xEA quer entender tudo ent\xE3o precisa confiar em mim"
+      sentence: Eu e o Chico
+    - name: Carlos Ivete Canivete
+      sentence: "Porqu\xEA ser\xE1 que ele guarda essa foto aqui?"
+    - name: Carlos Ivete Canivete
+      sentence: 'E uma receita..., parece ser a bebida predileta dele. Melhor eu
+        dar uma passada no BAR.
+
+'
   answersDialogues: []
   answers: []
