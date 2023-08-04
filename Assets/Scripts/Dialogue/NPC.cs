@@ -6,6 +6,7 @@ public class NPC : ClickManager
 {
     public bool isClock;
     public bool isRooster;
+    public bool isTea;
     public DialogueSO dialogue;
     public DialogueSO endDialogue;
 
@@ -33,6 +34,11 @@ public class NPC : ClickManager
         {
             dialogueManager.EnqueueDialogue(endDialogue.dialogue);
             dialogueManager.StartDialogue(endDialogue, isClock, isRooster);
+        }
+        else if (isTea)
+        {
+            dialogueManager.EnqueueDialogue(dialogue.dialogue);
+            dialogueManager.StartDialogue(dialogue, isClock, isRooster, isTea);
         }
         else
         {
