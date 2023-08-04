@@ -14,17 +14,12 @@ public class AudioConfig : MonoBehaviour
     private float volumeFloat;
     private float sfxFloat;
     private AudioManager _am;
-
-    void Awake()
-    {
-        _am = AudioManager.instance;
-    }
+    bool canChange = false;
 
     void Start()
     {
+        _am = AudioManager.instance;
         firstPlayInt = PlayerPrefs.GetInt(firstPlay);
-
-        firstPlayInt = 0;
 
         if (firstPlayInt == 0)
         {
@@ -47,6 +42,7 @@ public class AudioConfig : MonoBehaviour
             sfxFloat = PlayerPrefs.GetFloat(sfxPref);
             sfxSlider.value = sfxFloat;
         }
+        canChange = true;
     }
 
 
@@ -66,19 +62,25 @@ public class AudioConfig : MonoBehaviour
 
     public void UpdateSound()
     {
-        foreach (Sound s in _am.sounds)
+        if (canChange)
         {
-            s.source.volume = volumeSlider.value;
+            foreach (Sound s in _am.sounds)
+            {
+                s.source.volume = volumeSlider.value;
+            }
+            SaveSoundSettings();
         }
-        SaveSoundSettings();
     }
 
     public void UpdateSfx()
     {
-        foreach (Sound s in _am.sfx)
+        if (canChange)
         {
-            s.source.volume = sfxSlider.value;
+            foreach (Sound s in _am.sfx)
+            {
+                s.source.volume = sfxSlider.value;
+            }
+            SaveSoundSettings();
         }
-        SaveSoundSettings();
     }
 }

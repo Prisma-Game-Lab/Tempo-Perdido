@@ -349,7 +349,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7834477531083440563}
+        m_TargetAssemblyTypeName: AudioConfig, Assembly-CSharp
+        m_MethodName: UpdateSfx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &197053859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,7 +2901,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7834477531083440563}
+        m_TargetAssemblyTypeName: AudioConfig, Assembly-CSharp
+        m_MethodName: UpdateSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2032569049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,6 +5221,7 @@ GameObject:
   - component: {fileID: 2433343978664200733}
   - component: {fileID: 7149975346601728139}
   - component: {fileID: 3508871522598403433}
+  - component: {fileID: 7834477531083440563}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -5581,6 +5606,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3d93217b2355349b8bac1d7c4d6385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7834477531083440563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3728478495777700530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18541da3c1d461b489cb1b35b1e42e35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 1864198692}
+  sfxSlider: {fileID: 186253726}
 --- !u!1 &3728478495904368890
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,7 +6175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3728478496953741887
 RectTransform:
   m_ObjectHideFlags: 0
