@@ -17,6 +17,30 @@ MonoBehaviour:
     - name: Zeca Caneca
       sentence: "Olha quem apareceu!, faz tempo viu.\nBom voc\xEA ter aparecido aqui!
         \nE a\xED?, vai pedir o que esta noite?"
+    - name: Carlos Ivete Canivete
+      sentence: "Zeca, vim aqui hoje por outro motivo. \nQueria saber se ouviu alguma
+        coisa do Chico? Estava precisando falar uma coisa com ele."
+    - name: Zeca Caneca
+      sentence: "Que tipo de coisa?.\nSabe que eu gosto de uma boa fofoca n\xE9 hahaha"
+    - name: Carlos Ivete Canivete
+      sentence: "Nada de mais\u2026\r\n"
+    - name: Carlos Ivete Canivete
+      sentence: 'Coisas do trabalho, sabe
+
+'
+    - name: 
+      sentence: "*Sil\xEAncio*"
+    - name: Zeca Caneca
+      sentence: "Ele n\xE3o disse nada de mais na \xFAltima vez que o vi\u2026\r\n"
+    - name: Zeca Caneca
+      sentence: "\xC1h! J\xE1 ia me esquecendo...\nEle me deu isso quando saiu da
+        \xFAltima vez e pediu para te entregar"
+    - name: Carlos Ivete Canivete
+      sentence: "*\xC9 uma carta, seu selo ainda est\xE1 intacto..*"
+    - name: Zeca Caneca
+      sentence: "N\xE3o se preocupe, eu n\xE3o li n\xE3o. Me segurei bastante para
+        n\xE3o ver o que tinha nela. Sou intrometido, mas sou caneca de honra viu
+        hahaha\n"
   answersDialogues:
   - {fileID: 11400000, guid: 5339485c3b651444f8eea208057e483d, type: 2}
   answers: []

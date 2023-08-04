@@ -21,8 +21,7 @@ MonoBehaviour:
     - name: Carlos Ivete Canivete
       sentence: Raios!, onde foi que ele se meteu?
     - name: Carlos Ivete Canivete
-      sentence: "Lembro dele guardar seu di\xE1rio dentro de um COFRE. Talvez, se
-        eu conseguir abri-lo, eu possa descobrir onde foi que ele se meteu. Espero
-        que n\xE3o seja tarde demais\u2026 "
+      sentence: "Lembro que ele tinha um COFRE. Talvez, se eu conseguir abri-lo eu
+        possa descobrir alguma coisa. Espero que n\xE3o seja tarde demais\u2026 "
   answersDialogues: []
   answers: []

@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Carlos_P_Scene_2_Foto_e_Receita
+  m_Name: Carlos_P_Senha
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
     - name: Carlos Ivete Canivete
-      sentence: "O que tem de t\xE3o especial nessa foto?"
-    - name: Carlos Ivete Canivete
-      sentence: "Sei l\xE1\u2026 Mas essa receita parece a bebida predileta dele.
-        Melhor dar uma passada no BAR.\r\n"
+      sentence: "Uma combina\xE7\xE3o de numeros\u2026 s\xF3 pode ser a senha do
+        cofre dele!\r\n"
   answersDialogues: []
   answers: []
