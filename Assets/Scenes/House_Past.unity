@@ -394,7 +394,7 @@ MonoBehaviour:
   movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
   interrupted: 0
   popUp: {fileID: 255491672}
-  key: Handle
+  key: HandlePast
   puzzleCanvas: {fileID: 7804901337207581392, guid: defe1047d300ab6439e5291dd681f2b6, type: 3}
   completed: 0
   puzzleName: ChestPuzzle
