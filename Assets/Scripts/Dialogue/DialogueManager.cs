@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     private DialogueSO currentDialogue;
     private bool isClock;
     private bool isRooster;
+    private bool isTea;
 
     void Start()
     {
@@ -31,7 +32,7 @@ public class DialogueManager : MonoBehaviour
         DisplayEndButtons(false);
     }
 
-    public void StartDialogue(DialogueSO obj, bool _isClock, bool _isRooster = false)
+    public void StartDialogue(DialogueSO obj, bool _isClock, bool _isRooster = false, bool _isTea = false)
     {
         movementSO.canMove = false;
         dialogueBox.SetActive(true);
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
         isClock = _isClock;
         isRooster = _isRooster;
+        isTea = _isTea;
         currentDialogue = obj;
         DisplayNextSentence();
     }
@@ -47,7 +49,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            if (!isClock && !isRooster && currentDialogue.answers.Count == 0)
+            if (!isClock && !isRooster && !isTea && currentDialogue.answers.Count == 0)
             {
                 EndDialogue();
             }
@@ -61,6 +63,12 @@ public class DialogueManager : MonoBehaviour
             {
                 continueButton.SetActive(false);
                 dialogueText.text = "Beber da garrafa?";
+                DisplayEndButtons(true);
+            }
+            else if (isTea && currentDialogue.answers.Count == 0)
+            {
+                continueButton.SetActive(false);
+                dialogueText.text = "Beber o chá?";
                 DisplayEndButtons(true);
             }
             else if (currentDialogue.answers.Count > 0)
@@ -108,6 +116,11 @@ public class DialogueManager : MonoBehaviour
     {
         movementSO.canMove = true;
         timeTravelSO.TimeTravel();
+    }
+
+    public void GoodEnd()
+    {
+        SceneManager.LoadScene("GoodEnding");
     }
 
     public void BadEnd()

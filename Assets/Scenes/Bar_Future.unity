@@ -153,7 +153,7 @@ Transform:
   m_Children:
   - {fileID: 2064505502}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162448598
 GameObject:
@@ -356,7 +356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3001242706571813072, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3001242706571813072, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
       propertyPath: m_LocalScale.x
@@ -2180,7 +2180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2361073158680223372, guid: 2cd1957a8692763418eed8b63b057e58, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2361073158680223372, guid: 2cd1957a8692763418eed8b63b057e58, type: 3}
       propertyPath: m_LocalScale.x
@@ -2413,6 +2413,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1770587804}
   - {fileID: 1534439696}
   - {fileID: 1340795099}
   - {fileID: 202895392}
@@ -2839,7 +2840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3001242706571813072, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3001242706571813072, guid: 90d75a7580b35444fa4aa541085af63f, type: 3}
       propertyPath: m_LocalScale.x
@@ -3553,7 +3554,7 @@ Transform:
   - {fileID: 1850934349}
   - {fileID: 568464766}
   m_Father: {fileID: 1377913708}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1704371807
 MonoBehaviour:
@@ -3894,7 +3895,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770587802
 GameObject:
@@ -3912,6 +3913,7 @@ GameObject:
   - component: {fileID: 1770587808}
   - component: {fileID: 1770587809}
   - component: {fileID: 1770587810}
+  - component: {fileID: 1770587813}
   m_Layer: 0
   m_Name: xicara
   m_TagString: Untagged
@@ -3978,15 +3980,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770587802}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.32, y: 3.15, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 26.692911, y: 2.7626293, z: -0.045768622}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1655590760}
   - {fileID: 915260769}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1377913708}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1770587805
 MonoBehaviour:
@@ -3995,7 +3997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770587802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a378029beed534d4c8adef95acece737, type: 3}
   m_Name: 
@@ -4124,13 +4126,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
+        - m_Target: {fileID: 1770587805}
+          m_TargetAssemblyTypeName: ClickManager, Assembly-CSharp
+          m_MethodName: OnHoverEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4140,13 +4142,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
+        - m_Target: {fileID: 1770587805}
+          m_TargetAssemblyTypeName: ClickManager, Assembly-CSharp
+          m_MethodName: OnHoverExit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4199,6 +4201,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1770587813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770587802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44ad98f8cae64e4fb8408ba45f6a377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  itemData:
+    goToPoint: {fileID: 1655590760}
+  movementSO: {fileID: 11400000, guid: ac107d077141e044386edef944321c2f, type: 2}
+  interrupted: 0
+  popUp: {fileID: 915260768}
+  isClock: 0
+  isRooster: 0
+  isTea: 1
+  dialogue: {fileID: 11400000, guid: 1264c0af68f851e409241be76bd1fc54, type: 2}
+  endDialogue: {fileID: 0}
 --- !u!1 &1783986155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,6 +4588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 726691226159463283, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoodEnd
+      objectReference: {fileID: 0}
     - target: {fileID: 3728478495777700530, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
       propertyPath: m_Name
       value: MainCanvas
@@ -5091,5 +5120,6 @@ MonoBehaviour:
   popUp: {fileID: 0}
   isClock: 0
   isRooster: 0
+  isTea: 0
   dialogue: {fileID: 11400000, guid: 830c6b25e27daac4cb87dd0c9d96886c, type: 2}
   endDialogue: {fileID: 0}
