@@ -2070,6 +2070,7 @@ MonoBehaviour:
   popUp: {fileID: 724999904}
   isClock: 0
   isRooster: 1
+  isTea: 0
   dialogue: {fileID: 11400000, guid: f3dcbf78a80b43d4ab90a32a96aa88c2, type: 2}
   endDialogue: {fileID: 11400000, guid: 6f7ef415337ad6047b6846e2479908f6, type: 2}
 --- !u!212 &707818228
@@ -3171,6 +3172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3728478495777700530, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3728478495777700534, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3253,6 +3258,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3728478495777700534, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728478496953741886, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3728478496953741887, guid: e77000c6c1febfc479eeaaa36d587c45, type: 3}
