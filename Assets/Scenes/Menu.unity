@@ -435,7 +435,7 @@ MonoBehaviour:
   mixerGroup: {fileID: 0}
   sounds:
   - name: Menu
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4639ccd8e4dba7d4c976c72db92df1cf, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: MainTheme
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4639ccd8e4dba7d4c976c72db92df1cf, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: FriendStreet
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 69f55fdbfe887234884136e32b8c5078, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: FriendHouse
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 9539b13b3be4fce468642773ebd81df1, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: ThePub
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 993c4a042dc235f4bb2442d3e15624f1, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -480,7 +480,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: TrueEnding
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4b574ba2b2e31e14b9564b785bfc92a7, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: AlternativeEnding
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: b1745b21a151e554e940b07de7a6ce1a, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: ClockHead
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7dc3f61153556104083044c6201ac461, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: MugHead
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 27b2414449677ae40bee0ca0b5821d99, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
@@ -516,7 +516,25 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: CupHead
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 599acb0efc9b45941a579b21ad5c7752, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: GameIntro
+    clip: {fileID: 8300000, guid: 98b43be59b4be0341987914cbb6c963c, type: 3}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: GamePast
+    clip: {fileID: 8300000, guid: 8bda1515d0322ae4ea84aadff045dc4e, type: 3}
     volume: 0
     volumeVariance: 0
     pitch: 0
