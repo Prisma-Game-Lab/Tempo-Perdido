@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - name: Carlos Ivete Canivete
-      sentence: "Uma combina\xE7\xE3o de numeros\u2026 s\xF3 pode ser a senha do
-        cofre dele!\r\n"
+      sentence: "Uma combina\xE7\xE3o de n\xFAmeros\u2026 s\xF3 pode ser a senha
+        do cofre dele!\r\n"
   answersDialogues: []
   answers: []

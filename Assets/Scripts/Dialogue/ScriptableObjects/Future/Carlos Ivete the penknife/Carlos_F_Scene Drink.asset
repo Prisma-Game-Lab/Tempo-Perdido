@@ -10,11 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f205f7d17f982a4f88d2c6d445624be, type: 3}
-  m_Name: Carlos_P_Bottle
+  m_Name: Carlos_F_Scene Drink
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
     - name: Carlos Ivete Canivete
-      sentence: "Essa tem uma L\xC1GRIMA na frente\u2026 S\xF3 pode ser essa\u2026\r"
+      sentence: Chico me disse uma vez que quando tudo dava errado ele vinha aqui
+        e pedia sua bebida predileta..
+    - name: Carlos Ivete Canivete
+      sentence: ...
+    - name: Carlos Ivete Canivete
+      sentence: "Parece que deu tudo errado n\xE9 Chico...\nEnt\xE3o eu vou tomar
+        essa bebida por voc\xEA!"
+    - name: Carlos Ivete Canivete
+      sentence: Adeus Amigo
   answersDialogues: []
   answers: []

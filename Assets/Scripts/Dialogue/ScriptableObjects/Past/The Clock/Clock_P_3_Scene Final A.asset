@@ -15,13 +15,14 @@ MonoBehaviour:
   dialogue:
     sentences:
     - name: Carlos Ivete Canivete
-      sentence: "A foto\u2026 \nO que isso significa?, o que voc\xEA sabe sobre isso?"
+      sentence: "A foto\u2026, o laudo...\nO que isso significa?, o que voc\xEA sabe
+        sobre isso?"
     - name: ???
       sentence: "Voc\xEA diz que n\xE3o sabe, mas no fundo voc\xEA sabe. Tudo isso
         \xE9 in\xFAtil Carlos\u2026"
     - name: Carlos Ivete Canivete
       sentence: "Imposs\xEDvel!, \xE9 mentira. Voc\xEA me deu esse poder. Tem que
-        ter uma solu\xE7\xE3o.\r"
+        ter uma solu\xE7\xE3o"
     - name: ???
       sentence: "O tempo\u2026 \xE9 imposs\xEDvel mud\xE1-lo. \xC9 assim que a realidade
         funciona. Voc\xEA s\xF3 estaria correndo em c\xEDrculos.\r"
@@ -34,7 +35,7 @@ MonoBehaviour:
         Sabe o porqu\xEA? Porque abusei desse poder, e fui punido."
     - name: Carlos Ivete Canivete
       sentence: "Mas se tudo isso \xE9 verdade, por que voc\xEA me permitiu viajar
-        no tempo?\r"
+        no tempo?\r, por que me permitiu tentar salv\xE1lo?"
     - name: "Carlos Rel\xF3gio"
       sentence: "Era necess\xE1rio\u2026\r"
     - name: Carlos Ivete Canivete
