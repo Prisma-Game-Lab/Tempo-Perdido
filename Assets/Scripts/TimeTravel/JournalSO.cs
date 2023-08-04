@@ -36,6 +36,11 @@ public class JournalSO : ScriptableObject
             unlockedLettersByMailbox[mailboxId].Add(totalLetters[mailboxId][unlockedLettersByMailbox[mailboxId].Count]);
             canUnlockLetter = false;
             recieveLetterEvent?.Invoke();
+            AudioManager.instance.PlaySfx("MailBoxAnimation");
+        }
+        else
+        {
+            AudioManager.instance.PlaySfx("NoLetter");
         }
     }
 

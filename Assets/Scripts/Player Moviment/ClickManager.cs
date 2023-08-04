@@ -27,6 +27,8 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        AudioManager.instance.PlaySfx("Click");
+
         if (itemData.goToPoint.position.x < Player.position.x)
         {
             Player.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
@@ -61,6 +63,7 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
     public virtual IEnumerator MoveToPoint(Vector2 point)
     {
+        AudioManager.instance.PlaySfx("Steps1");
         Player.gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("walking", true);
         Vector2 positionDifference = point - (Vector2)Player.position;
 
@@ -88,6 +91,7 @@ public class ClickManager : MonoBehaviour, IPointerClickHandler
 
         movementSO.redirect = false;
         Player.gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("walking", false);
+        AudioManager.instance.StopSfx("Steps1");
     }
 
     public void OnHoverEnter()

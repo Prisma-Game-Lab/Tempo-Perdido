@@ -28,6 +28,10 @@ public class Collectable : ClickManager
 
     public void Collect()
     {
+        if (key == "HouseKey")
+        {
+            AudioManager.instance.PlaySfx("Key");
+        }
         InventoryManager im = FindObjectOfType<InventoryManager>();
         im.AddItem(this);
         SceneObserver.playerData.CollectItem(key);

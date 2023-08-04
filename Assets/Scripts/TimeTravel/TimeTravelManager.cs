@@ -33,11 +33,13 @@ public class TimeTravelManager : MonoBehaviour
         {
             journal.canUnlockLetter = true;
             sceneName = sceneName.Replace("Future", "Past");
+            AudioManager.instance.PlaySfx("TimeTravel");
         }
         else if (travelTo == TravelTo.FUTURE)
         {
             journal.canUnlockLetter = false;
             sceneName = sceneName.Replace("Past", "Future");
+            AudioManager.instance.PlaySfx("TimeTravelReversed");
         }
         SceneObserver.playerData.currentScene = sceneName;
         SceneObserver.SaveGame();

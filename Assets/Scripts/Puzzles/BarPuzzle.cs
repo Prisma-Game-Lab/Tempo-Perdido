@@ -62,6 +62,7 @@ public class BarPuzzle : MonoBehaviour
         Debug.Log("puzzle concluido!");
         isCompleted = true;
         SceneObserver.InvokeEvent(puzzleName);
+        AudioManager.instance.PlaySfx("MakeDrink");
         SelfDestruct();
     }
 

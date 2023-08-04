@@ -57,10 +57,14 @@ public class PlayerControllerArrows : MonoBehaviour
     {
         if (ctx.performed)
         {
+            AudioManager.instance.StopSfx("Steps1");
+            AudioManager.instance.PlaySfx("Run");
+
             currentSpeed = run;
         }
         else if (ctx.canceled)
         {
+            AudioManager.instance.StopSfx("Run");
             currentSpeed = speed;
         }
     }
@@ -72,11 +76,17 @@ public class PlayerControllerArrows : MonoBehaviour
         if (moveVec != Vector2.zero)
         {
             animator.SetBool("walking", true);
+            if (currentSpeed != run)
+            {
+                AudioManager.instance.PlaySfx("Steps1");
+            }
             moving = true;
         }
         else
         {
             animator.SetBool("walking", false);
+            AudioManager.instance.StopSfx("Steps1");
+            AudioManager.instance.StopSfx("Run");
             moving = false;
         }
 

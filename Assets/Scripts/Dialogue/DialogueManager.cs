@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueSO obj, bool _isClock, bool _isRooster = false, bool _isTea = false)
     {
+        AudioManager.instance.PlaySfx("SpeechBubble");
         movementSO.canMove = false;
         dialogueBox.SetActive(true);
         continueButton.SetActive(true);
@@ -51,22 +52,26 @@ public class DialogueManager : MonoBehaviour
         {
             if (!isClock && !isRooster && !isTea && currentDialogue.answers.Count == 0)
             {
+                AudioManager.instance.PlaySfx("SpeechNext");
                 EndDialogue();
             }
             else if (isClock && currentDialogue.answers.Count == 0)
             {
+                AudioManager.instance.PlaySfx("SpeechNext");
                 continueButton.SetActive(false);
                 dialogueText.text = "Viajar no tempo?";
                 DisplayButtons(true);
             }
             else if (isRooster && currentDialogue.answers.Count == 0)
             {
+                AudioManager.instance.PlaySfx("SpeechNext");
                 continueButton.SetActive(false);
                 dialogueText.text = "Beber da garrafa?";
                 DisplayEndButtons(true);
             }
             else if (isTea && currentDialogue.answers.Count == 0)
             {
+                AudioManager.instance.PlaySfx("SpeechNext");
                 continueButton.SetActive(false);
                 dialogueText.text = "Beber o chá?";
                 DisplayEndButtons(true);
@@ -84,6 +89,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        AudioManager.instance.PlaySfx("SpeechNext");
         DialogueStructure sentence = sentences.Dequeue();
         dialogueText.text = sentence.sentence;
         nameText.text = sentence.name;
@@ -152,7 +158,7 @@ public class DialogueManager : MonoBehaviour
         {
             answerButtons[i].SetActive(false);
         }
-
+        AudioManager.instance.PlaySfx("SpeechAnswer");
         EnqueueDialogue(currentDialogue.answersDialogues[index].dialogue);
         StartDialogue(currentDialogue.answersDialogues[index], isClock);
     }

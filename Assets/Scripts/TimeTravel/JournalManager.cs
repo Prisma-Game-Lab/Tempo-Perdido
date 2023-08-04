@@ -26,6 +26,7 @@ public class JournalManager : MonoBehaviour
 
     public void OpenJournal()
     {
+        AudioManager.instance.PlaySfx("OpenLetter");
         if (journalPopup.activeSelf)
         {
             journalPopup.SetActive(false);
@@ -51,6 +52,7 @@ public class JournalManager : MonoBehaviour
 
     public void ChangePage(int dir)
     {
+        AudioManager.instance.PlaySfx("OpenLetter");
         if (journal.unlockedLetters.Count > 0)
         {
             currentIndex += dir;

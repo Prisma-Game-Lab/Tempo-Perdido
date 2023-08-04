@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using System;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -99,11 +100,6 @@ public class AudioManager : MonoBehaviour
     public void StopAllSounds()
     {
         foreach (Sound s in sounds)
-        {
-            s.source.Stop();
-        }
-
-        foreach (Sound s in sfx)
         {
             s.source.Stop();
         }

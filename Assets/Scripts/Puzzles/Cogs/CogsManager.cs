@@ -108,6 +108,7 @@ public class CogsManager : MonoBehaviour
         }
 
         pins[selectedPin].PlaceCog(cogsDict[key]);
+        AudioManager.instance.PlaySfx("GearFit");
         cogSelector.SetActive(false);
         CheckCompletion();
 
@@ -129,6 +130,7 @@ public class CogsManager : MonoBehaviour
         puzzleCompleted = true;
         SceneObserver.InvokeEvent(puzzleName);
         Debug.Log("Puzzle completed");
+        AudioManager.instance.PlaySfx("GearCleared");
         SelfDestruct();
     }
 

@@ -38,6 +38,7 @@ public class ChaveSpawn : ClickManager
         if (colision.CompareTag("Floor"))
         {
             Chave.SetActive(true);
+            AudioManager.instance.PlaySfx("BrokenLamp");
             Destroy(gameObject);
             OnHoverEnter();
         }

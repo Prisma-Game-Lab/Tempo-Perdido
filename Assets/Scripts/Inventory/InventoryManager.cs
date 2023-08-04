@@ -17,7 +17,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (visuals.visuals.ContainsKey(inventory.inventoryItems[i].key))
             {
-              inventory.inventoryItems[i].sprite = visuals.SetVisuals(inventory.inventoryItems[i].key);  
+                inventory.inventoryItems[i].sprite = visuals.SetVisuals(inventory.inventoryItems[i].key);
             }
         }
 
@@ -32,6 +32,7 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(Collectable collectable)
     {
+        AudioManager.instance.PlaySfx("AddInInventory");
         CollectableObject obj = new CollectableObject(collectable.itemName, collectable.spriteRenderer.sprite);
         inventory.AddItem(obj);
         UpdateView();
@@ -40,6 +41,7 @@ public class InventoryManager : MonoBehaviour
 
     public void UseItem()
     {
+        AudioManager.instance.PlaySfx("RemoveFromInventory");
         inventory.RemoveItem(selectedItem);
         UpdateView();
         SceneObserver.playerData.KeepInventory(inventory.inventoryItems);

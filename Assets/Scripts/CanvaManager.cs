@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvaManager : MonoBehaviour
 {
@@ -8,8 +9,32 @@ public class CanvaManager : MonoBehaviour
 
     void Start()
     {
-        camera = FindObjectOfType<CameraControls>(); 
+        AudioManager.instance.StopAllSounds();
+        if (SceneManager.GetActiveScene().name.Contains("Bar"))
+        {
+            AudioManager.instance.PlaySound("ThePub");
+            AudioManager.instance.PlaySfx("AmbiencePub");
+        }
+        else if (SceneManager.GetActiveScene().name.Contains("House"))
+        {
+            AudioManager.instance.PlaySound("FriendHouse");
+        }
+        else if (SceneManager.GetActiveScene().name.Contains("Menu"))
+        {
+            AudioManager.instance.PlaySound("Menu");
+        }
+        else if (SceneManager.GetActiveScene().name.Contains("Game"))
+        {
+            AudioManager.instance.PlaySound("FriendStreet");
+            AudioManager.instance.PlaySfx("AmbienceStreet");
+        }
+        else if (SceneManager.GetActiveScene().name.Contains("Good"))
+        {
+            AudioManager.instance.PlaySound("TrueEnding");
+        }
+        camera = FindObjectOfType<CameraControls>();
     }
+
 
     public void MoveCamera(int dir)
     {

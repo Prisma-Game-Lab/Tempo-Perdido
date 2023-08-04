@@ -32,6 +32,7 @@ public class NPC : ClickManager
         }
         else if (isRooster && SceneObserver.playerData.hasTriggeredEnd)
         {
+            AudioManager.instance.PlaySfx("WeatherVane");
             dialogueManager.EnqueueDialogue(endDialogue.dialogue);
             dialogueManager.StartDialogue(endDialogue, isClock, isRooster);
         }

@@ -28,10 +28,20 @@ public class Door : ClickManager
     {
         if (isOpen || inventory.inventoryItems.Find(x => x.key == requiredKey) != null)
         {
+            if (SceneManager.GetActiveScene().name.Contains("Bar"))
+            {
+                AudioManager.instance.PlaySfx("EnterPub");
+            }
+            else
+            {
+                AudioManager.instance.PlaySfx("OpenDoor");
+            }
+
             SceneManager.LoadScene(sceneIndex);
         }
         else
         {
+            AudioManager.instance.PlaySfx("UnlockDoor");
             dialogueManager.EnqueueDialogue(monologue.dialogue);
             dialogueManager.StartDialogue(monologue, false);
         }

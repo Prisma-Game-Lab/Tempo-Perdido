@@ -24,6 +24,8 @@ public class AudioConfig : MonoBehaviour
     {
         firstPlayInt = PlayerPrefs.GetInt(firstPlay);
 
+        firstPlayInt = 0;
+
         if (firstPlayInt == 0)
         {
             volumeFloat = 0.5f;
