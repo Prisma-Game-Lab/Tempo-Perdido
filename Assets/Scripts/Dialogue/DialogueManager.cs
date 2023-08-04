@@ -120,6 +120,10 @@ public class DialogueManager : MonoBehaviour
 
     public void GoodEnd()
     {
+        movementSO.canMove = true;
+        inventorySO.ClearInventory();
+        SceneObserver.playerData = new PlayerData();
+        SceneObserver.playerData.ResetLoop();
         SceneManager.LoadScene("GoodEnding");
     }
 
