@@ -97,11 +97,6 @@ Library: C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\StagingArea\Da
 --compilation-defines=NET_STANDARD_2_1
 --compilation-defines=NETSTANDARD
 --compilation-defines=NETSTANDARD2_1
---compilation-defines=DEVELOPMENT_BUILD
---compilation-defines=ENABLE_PROFILER
---compilation-defines=DEBUG
---compilation-defines=TRACE
---compilation-defines=UNITY_ASSERTIONS
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
 --compilation-defines=ENABLE_LOCALIZATION
@@ -144,7 +139,6 @@ Library: C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\StagingArea\Da
 --linker-options=PdbAltPath="Tempo Perdido_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
 --decode-folder=C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Library\Burst
 --output=C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
@@ -263,11 +257,6 @@ Library: C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\StagingArea\Da
 --compilation-defines=NET_STANDARD_2_1
 --compilation-defines=NETSTANDARD
 --compilation-defines=NETSTANDARD2_1
---compilation-defines=DEVELOPMENT_BUILD
---compilation-defines=ENABLE_PROFILER
---compilation-defines=DEBUG
---compilation-defines=TRACE
---compilation-defines=UNITY_ASSERTIONS
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
 --compilation-defines=ENABLE_LOCALIZATION
@@ -310,7 +299,6 @@ Library: C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\StagingArea\Da
 --linker-options=PdbAltPath="Tempo Perdido_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
 --decode-folder=C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Library\Burst
 --output=C:\Users\Victhor\UnityProjects\Tempo Perdido\Time-1\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
