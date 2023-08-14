@@ -66,9 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Adicione as engrenagens corretas nos c\xEDrculos (pins).\r\n\r\nPara adicionar
-    uma engrenagem:\r\n1. Clique no pin desejado\r\n2. Selecione a engrenagem desejada,
-    dentre as dispon\xEDveis\r"
+  m_text: "Conecte a sequ\xEAncia engrenagens corretas nos c\xEDrculos brancos (pins).\r\n\r\nPara
+    adicionar uma engrenagem:\r\n1. Clique no pin desejado\r\n2. Selecione a engrenagem
+    desejada, dentre as dispon\xEDveis\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1be22f1066b8c94cb077e4d8e26209d, type: 2}
   m_sharedMaterial: {fileID: 8714829747173019856, guid: c1be22f1066b8c94cb077e4d8e26209d, type: 2}
