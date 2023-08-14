@@ -3606,7 +3606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2830416594716569964, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: pinIndex
@@ -3809,7 +3809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2830416594716569964, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: pinIndex
@@ -4016,7 +4016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2830416594716569964, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: pinIndex
@@ -4208,7 +4208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2830416594716569964, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3310079082775546425, guid: 6b697725fb793e3499be2901ac30da08, type: 3}
       propertyPath: pinIndex
